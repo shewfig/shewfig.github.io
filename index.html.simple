@@ -1,0 +1,113 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Jim MacLeod Portfolio</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="shortcut icon" href="ui/img/favicon.png" type="image/x-icon" />
+		<meta name="theme-color" content="#367fa9">
+		<link rel="apple-touch-icon" sizes="180x180" href="ui/img/glasscleaner-logo.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="ui/img/glasscleaner-logo.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="ui/img/glasscleaner-logo.png">
+		<meta name="msapplication-TileColor" content="#367fa9">
+		<meta name="msapplication-TileImage" content="img/glasscleaner-logo.png">
+
+		<link href="ui/style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="ui/style/vendor/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="ui/style/vendor/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+		<link href="ui/style/vendor/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<link href="ui/style/vendor/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+		<link href="ui/style/vendor/skin-blue.min.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" sizes="160x160" href="ui/img/glasscleaner-logo.png" />
+
+		<style type="text/css">
+.glow { text-shadow: 0px 0px 5px #fff; }
+h3 { transition-duration: 500ms }
+		</style>
+
+	</head>
+	<body>
+		<h1>Jim MacLeod's Content Samples</h1>
+		<h2>Blog Posts</h2>
+		<ul>
+			<li>
+				<a href="https://indeni.com/blog/dealing-with-covid-19-themed-malware/">
+					Dealing with COVID-19 themed malware
+				</a><br>
+				This post was a rapid response in March 2020 to CoViD-19, trying to be informative without feeling like a product pitch.
+			</li>
+			<li>
+				<a href="https://indeni.com/blog/5-ways-big-failures-grow-from-accumulated-small-failures/">
+					5 Ways Big Failures Grow from Accumulated Small Failures
+				</a><br>
+				One of my personal favorites, this blog post digs into why outages occur, and why it takes an exponential amount of effort for linear improvements.
+			</li>
+		</ul>
+		<h2>Videos</h2>
+		<ul>
+			<li>
+				<a href="https://www.youtube.com/watch?v=75triUzq2pQ">
+					Webinar: Running [Check Point] VSX like a Pro
+				</a><br>
+				This webinar was presented in conjunction with Indeni's technical partner Check Point to their user group. I created all of the content, with the exception of a few graphics.
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=rqbeSmG_eeQ">
+					"How Indeni Works" explainer video
+				</a><br>
+				This video was created as part of the 7.0 launch.  I authored the script and the shot list.
+			</li>
+		</ul>
+		<h2>Short Form / Collatral</h2>
+		<ul>
+			<li>
+				<a href="Company Overview_August 2019.pdf">
+					Company Overview_1-Pager
+				</a><br>
+				This overview is a sales enablement tool to credential the company with decision makers looking for assurance of product maturity and company stability.  Its contents are mostly boilerplate lifted from the KMD, which I created after the company commissioned an external consultant to develop high-level pitch phrases.
+			</li>
+			<li>
+				<a href="Indeni and BPA_ FAQ.pdf">
+					Indeni vs Palo Alto Networks Tools
+				</a><br>
+				This 1-page comparison chart is a visual reference to compare Indeni's product vs two tools from Indeni's technical partner Palo Alto Networks.  It was created at their request to train their SEs, and was popular enough that Indeni used it as collateral at Palo Alto Networks events.
+			</li>
+		</ul>
+		<h2>Long Form / Tech Doc</h2>
+		<ul>
+			<li>
+				<a href="White Paper- How Indeni Works_1909.pdf">
+					"How Indeni Works"_White Paper
+				</a><br>
+				This white paper was an asset as part of Indeni's major 7.0 launch, and is a nearly complete rewrite of a previous asset written by the CEO.  Its intended audience is a senior engineer or security architect, to alleviate concerns during the product evaluation and provide them with the mental tooling to advocate for the product's purchase.
+			</li>
+			<li>
+				<a href="Check Point Deployment Trends 2020.pdf">
+					Check Point Deployment Trends Report 2020
+				</a><br>
+				This report is a public-consumption tool to build Indeni's reputation, based on the telemetry data unique to their product.  I was the sole author and analyst for the report.  The plan was to leveraged Indeni's PR partner to get media mentions and a large number of first touches to prospects.
+			</li>
+			<li>
+				<a href="Indeni Product Evaluation Guide.pdf">
+					Indeni Product Evaluation Guide
+				</a><br>
+				This guide addressed the problem of scaling the technical pre-sales team to enable smaller customers to DIY their own POCs, based on our analysis of opps stalling at 30% in the pipeline.  Its intended audience is a mid-level engineer, so it has more of a "tech doc" feel, with a length that was carefully chosen to feel like a valuable piece of content without being so intimidating that it causes a delay of the evaluation.
+			</li>
+		</ul>
+		<h2>Misc</h2>
+		<ul>
+			<li>
+				<a href="https://www.linkedin.com/pulse/reflections-failed-startup-jim-macleod/">
+					Reflections on a Failed Startup
+				</a><br>
+				Retrospective for my own unsuccessful startup in 2016.
+			</li>
+			<li>
+				<a href="https://vpn.shewfig.tech/glasscleaner/about.php">
+					About GlassCleaner
+				</a><br>
+				The about page for my unsuccessful startup from 2016.
+			</li>
+		</ul>
+	</body>
+</html>
