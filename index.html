@@ -14,6 +14,58 @@
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
 
+    <!-- theme-switch css from https://adminlte.io/docs/3.1//assets/css/docs.css -->
+    <style type="text/css">
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 400ms;
+}
+
+.slider::before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: 400ms;
+  width: 16px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+    </style>
+
     <link rel="icon" type="image/png" sizes="160x160" href="ui/img/glasscleaner-logo.png" />
 
     <style type="text/css">
@@ -22,10 +74,21 @@ h3 { transition-duration: 500ms }
     </style>
 
   </head>
-  <body class="dark-mode">
-    <div class="page-header text-center">
+  <body class="layout-top-nav dark-mode">
+    <nav class="main-header navbar navbar-expand">
       <h1>Jim MacLeod's Content Samples</h1>
-    </div>
+      <!-- theme-switch element from https://adminlte.io/docs/3.1//index.html -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div class="theme-switch-wrapper nav-link">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </nav>
     <div class="row">
       <div class="col-md-12">
         <div class="card">
@@ -210,6 +273,52 @@ h3 { transition-duration: 500ms }
           </div>
         </div>
       </div>
+      <!-- theme-switch script from https://adminlte.io/docs/3.1//index.html -->
+      <script>
+        var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        var currentTheme = localStorage.getItem('theme');
+        var mainHeader = document.querySelector('.main-header');
 
+        if (document.body.classList.contains('dark-mode')) {
+          toggleSwitch.checked = true;
+        }
+
+        if (currentTheme) {
+          if (currentTheme === 'dark') {
+            if (!document.body.classList.contains('dark-mode')) {
+              document.body.classList.add("dark-mode");
+            }
+            if (mainHeader.classList.contains('navbar-light')) {
+              mainHeader.classList.add('navbar-dark');
+              mainHeader.classList.remove('navbar-light');
+            }
+            toggleSwitch.checked = true;
+          }
+        }
+
+        function switchTheme(e) {
+          if (e.target.checked) {
+            if (!document.body.classList.contains('dark-mode')) {
+              document.body.classList.add("dark-mode");
+            }
+            if (mainHeader.classList.contains('navbar-light')) {
+              mainHeader.classList.add('navbar-dark');
+              mainHeader.classList.remove('navbar-light');
+            }
+            localStorage.setItem('theme', 'dark');
+          } else {
+            if (document.body.classList.contains('dark-mode')) {
+              document.body.classList.remove("dark-mode");
+            }
+            if (mainHeader.classList.contains('navbar-dark')) {
+              mainHeader.classList.add('navbar-light');
+              mainHeader.classList.remove('navbar-dark');
+            }
+            localStorage.setItem('theme', 'light');
+          }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+      </script>
   </body>
 </html>
