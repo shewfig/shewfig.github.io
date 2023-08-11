@@ -75,7 +75,7 @@ h3 { transition-duration: 500ms }
     </style>
 
   </head>
-  <body class="layout-top-nav dark-mode">
+  <body class="layout-top-nav">
     <nav class="main-header navbar navbar-expand">
       <h1>Jim MacLeod's Content Samples</h1>
       <ul class="navbar-nav ml-auto">
@@ -282,24 +282,14 @@ h3 { transition-duration: 500ms }
       <!-- theme-switch script from https://adminlte.io/docs/3.1//index.html -->
       <script>
         var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        var currentTheme = localStorage.getItem('theme');
         var mainHeader = document.querySelector('.main-header');
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add("dark-mode");
+        }
 
         if (document.body.classList.contains('dark-mode')) {
           toggleSwitch.checked = true;
-        }
-
-        if (currentTheme) {
-          if (currentTheme === 'dark') {
-            if (!document.body.classList.contains('dark-mode')) {
-              document.body.classList.add("dark-mode");
-            }
-            if (mainHeader.classList.contains('navbar-light')) {
-              mainHeader.classList.add('navbar-dark');
-              mainHeader.classList.remove('navbar-light');
-            }
-            toggleSwitch.checked = true;
-          }
         }
 
         function switchTheme(e) {
