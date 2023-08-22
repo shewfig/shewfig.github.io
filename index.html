@@ -81,7 +81,7 @@ h3 { transition-duration: 500ms }
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-item" href="#">
-            <i class="bi-lightbulb-off" style="font-size: 2rem;"></i>
+            <i id="darkmode-indicator" class="bi-lightbulb-off" style="font-size: 2rem;"></i>
           </a>
         </li>
       <!-- theme-switch element from https://adminlte.io/docs/3.1//index.html -->
@@ -279,10 +279,14 @@ h3 { transition-duration: 500ms }
           </div>
         </div>
       </div>
-      <!-- theme-switch script from https://adminlte.io/docs/3.1//index.html -->
+      <!-- theme-switch script adapted from https://adminlte.io/docs/3.1//index.html -->
       <script>
+        const iconDark = "bi-lightbulb-off";
+        const iconLight = "bi-lightbulb-fill";
+
         var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
         var mainHeader = document.querySelector('.main-header');
+        var darkIcon = document.querySelector("#darkmode-indicator");
 
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           document.body.classList.add("dark-mode");
@@ -301,6 +305,12 @@ h3 { transition-duration: 500ms }
               mainHeader.classList.add('navbar-dark');
               mainHeader.classList.remove('navbar-light');
             }
+            if (darkIcon.classList.contains(iconLight)) {
+              darkIcon.classList.remove(iconLight);
+            }
+            if (!darkIcon.classList.contains(iconDark)) {
+              darkIcon.classList.add(iconDark);
+            }
             localStorage.setItem('theme', 'dark');
           } else {
             if (document.body.classList.contains('dark-mode')) {
@@ -310,11 +320,32 @@ h3 { transition-duration: 500ms }
               mainHeader.classList.add('navbar-light');
               mainHeader.classList.remove('navbar-dark');
             }
+            if (darkIcon.classList.contains(iconDark)) {
+              darkIcon.classList.remove(iconDark);
+            }
+            if (!darkIcon.classList.contains(iconLight)) {
+              darkIcon.classList.add(iconLight);
+            }
             localStorage.setItem('theme', 'light');
           }
         }
 
         toggleSwitch.addEventListener('change', switchTheme, false);
+
+        function toggleDarkSwitch(e) {
+          if (!toggleSwitch.checked) {
+            toggleSwitch.checked = true;
+            console.log("checked switch");
+          } else {
+            toggleSwitch.checked = false;
+            console.log("unchecked switch");
+          }
+          const iconChange = new Event("change");
+          toggleSwitch.dispatchEvent(iconChange);
+        }
+
+        darkIcon.addEventListener('click', toggleDarkSwitch, false);
+
       </script>
   </body>
 </html>
