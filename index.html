@@ -81,7 +81,8 @@ h3 { transition-duration: 500ms }
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-item" href="#">
-            <i id="darkmode-indicator" class="bi-lightbulb-off" style="font-size: 2rem;"></i>
+            <!-- default to non-dark mode: set indicator to match default -->
+            <i id="darkmode-indicator" class="bi-lightbulb-fill" style="font-size: 2rem;"></i>
           </a>
         </li>
       <!-- theme-switch element from https://adminlte.io/docs/3.1//index.html -->
@@ -296,6 +297,7 @@ h3 { transition-duration: 500ms }
           toggleSwitch.checked = true;
         }
 
+
         function switchTheme(e) {
           if (e.target.checked) {
             if (!document.body.classList.contains('dark-mode')) {
@@ -335,10 +337,8 @@ h3 { transition-duration: 500ms }
         function toggleDarkSwitch(e) {
           if (!toggleSwitch.checked) {
             toggleSwitch.checked = true;
-            console.log("checked switch");
           } else {
             toggleSwitch.checked = false;
-            console.log("unchecked switch");
           }
           const iconChange = new Event("change");
           toggleSwitch.dispatchEvent(iconChange);
