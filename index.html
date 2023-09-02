@@ -295,15 +295,6 @@ h3 { transition-duration: 500ms }
         var mainHeader = document.querySelector('.main-header');
         var darkIcon = document.querySelector("#darkmode-indicator");
 
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.body.classList.add("dark-mode");
-        }
-
-        if (document.body.classList.contains('dark-mode')) {
-          toggleSwitch.checked = true;
-        }
-
-
         function switchTheme(e) {
           if (e.target.checked) {
             if (!document.body.classList.contains('dark-mode')) {
@@ -351,6 +342,10 @@ h3 { transition-duration: 500ms }
         }
 
         darkIcon.addEventListener('click', toggleDarkSwitch, false);
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          toggleDarkSwitch();
+        }
 
       </script>
   </body>
