@@ -27,11 +27,13 @@
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
 }
 
 input.theme-switch {
   visibility: hidden;
+  height: 24px;
+  width: 24px;
 }
 
 input.theme-switch:checked:after, input.theme-switch:after {
@@ -39,12 +41,12 @@ input.theme-switch:checked:after, input.theme-switch:after {
 }
 
 input.theme-switch:checked:after {
-  content: '\e518';
   color: white;
+  content: '\e51c';
 }
 
 input.theme-switch::after {
-  content: '\e51c';
+  content: '\e518';
 }
 
     </style>
@@ -52,210 +54,206 @@ input.theme-switch::after {
     <link rel="icon" type="image/png" sizes="160x160" href="ui/img/glasscleaner-logo.png" />
 
   </head>
-  <body class="layout-top-nav">
-    <nav class="main-header navbar navbar-expand">
-      <span class="navbar-brand">Jim MacLeod's Content Samples</span>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <div class="theme-switch-wrapper nav-link">
-            <input type="checkbox" class="material-symbols-outlined theme-switch" id="theme-switch-checkbox">
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card card-info">
-                  <div class="card-header with-border">
-                    <h3 class="card-title">Blog Posts</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="https://www.f5.com/company/blog/don-t-bring-a-legacy-mindset-to-multi-cloud">
-                          "Don’t Bring a Legacy Mindset to Multi-Cloud"
-                        </a><br>
-                        Thought leadership to shift cloud architects away from legacy L3 networking and towards app-centric L7 and API service discovery between multiple sites and clouds.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://indeni.com/blog/palo-alto-networks-pan-os-upgrades-after-a-vulnerability-announcement/">
-                          "Palo Alto Networks PAN-OS upgrades after a vulnerability announcement"
-                        </a><br>
-                        An analysis of the prevalence of firewall upgrades after announcement of a serious vulnerability, based on proprietary telemetry.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://indeni.com/blog/5-ways-big-failures-grow-from-accumulated-small-failures/">
-                          "5 Ways Big Failures Grow from Accumulated Small Failures"
-                        </a><br>
-                        One of my personal favorites, this thought piece digs into why outages occur, and why it takes an exponential amount of effort for linear improvements.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-danger">
-                  <div class="card-header with-border">
-                    <h3 class="card-title">Collateral and Sales Enablement</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="Indeni and BPA_ FAQ.pdf">
-                          Product Comparison Chart
-                        </a><br>
-                        A visual comparison of Indeni's product vs two free tools from Palo Alto Networks.  Palo Alto Networks requested it to train their SEs, and Indeni adopted it as collateral.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://docs.google.com/presentation/d/1J98Q3TyDo8UZ-j0dd7WI9D3GBjFhgsXJToZ4_gblFVw/edit?usp=sharing">
-                          Sales Enablement Training
-                        </a><br>
-                        A synthetic internal Sales training deck, with feature/benefit messaging, target personas, and cold email templates.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="Company Overview_August 2019.pdf">
-                          Company Overview 1-Pager
-                        </a><br>
-                        Single page doc to credential the company to customers.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="F5 cookie labels.jpg">
-                          Pun humor on a give-away
-                        </a><br>
-                        Silly but topical and memorable labels on conference cookies.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-primary">
-                  <div class="card-header with-border">
-                    <h3 class="card-title">Videos</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="archive/videos/how-indeni-works.html">
-                          Explainer animation: "How Indeni Works"
-                        </a><br>
-                        A 90 second explainer animation, commissioned for the Indeni 7.0 launch. I wrote the script and shotlist, then managed the vendor during production.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="archive/videos/f5-mcn-overview.html">
-                          Interview / presentation: F5 Distributed Cloud
-                        </a><br>
-                        An interview-style presentation demonstrating the value of connecting networks and applications among public and hybrid clouds at L3, L4, and L7.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="archive/videos/cp-vsx-webinar.html">
-                          Webinar: Running [Check Point] VSX like a Pro
-                        </a><br>
-                        A webinar presented to a technical partner's user group demonstrating the value of our product.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Jim MacLeod's Content Samples</span>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="theme-switch-wrapper nav-link">
+              <input type="checkbox" class="material-symbols-outlined theme-switch" id="theme-switch-checkbox">
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card card-warning">
-                  <div class="card-header with-border">
-                    <h3 class="card-title">Technical Content</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="White Paper- How Indeni Works_1909.pdf">
-                          White paper: "How Indeni Works"
-                        </a><br>
-                        This WP is a nearly complete rewrite of a previous asset, to support the launch I led.  Its purpose is to alleviate an engineer's concerns during evaluation and equip them to convince the decision maker.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="Indeni Product Evaluation Guide.pdf">
-                          Indeni Product Evaluation Guide
-                        </a><br>
-                        A guide so customers can DIY their own POCs and progress themselves down the funnel.  It has a "tech doc" feel with a carefully crafted length to be valuable but not overwhelming.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="Check Point Deployment Trends 2020.pdf">
-                          Check Point Deployment Trends Report 2020
-                        </a><br>
-                        This report is a public-consumption tool to build Indeni's reputation, based on the telemetry data unique to their product.  I was the sole author and analyst for the report.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-success">
-                  <div class="card-header with-border">
-                    <h3 class="card-title">Code Samples</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="https://github.com/shewfig/macos-misc/blob/master/hammerspoon/mouse-unified.lua">
-                          Lua script modifying MacOS behavior
-                        </a><br>
-                        Lua module to extend <a href="https://www.hammerspoon.org/">HammerSpoon</a> to remap trackball buttons, written and documented to Sample Code quality.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://github.com/shewfig/log-utils/blob/master/dnsqltraq.sh">
-                          DNS lookup to IP tracker
-                        </a><br>
-                        Streaming dnsmasq log parser on a secure web gateway to provide domain mapping per remote IP per user lookup to de-anonymize CDN connections.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://github.com/shewfig/gmail-spam-sift/blob/master/spam-sift.py">
-                          Python script for Gmail API
-                        </a><br>
-                        Python script using Gmail API library to determine common phrases in spam messages.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://github.com/shewfig/shewfig.github.io/blob/main/index.html">
-                          HTML / JS for this Portfolio page
-                        </a><br>
-                        The source for this page, using Bootstrap for responsive layout and dynamic dark mode.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-info">
-                  <div class="card-header with-border">
-                    <h3 class="card-title">Entrepreneurialism</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="https://www.linkedin.com/pulse/reflections-failed-startup-jim-macleod/">
-                          Reflections on a Failed Startup
-                        </a><br>
-                        Retrospective for my own unsuccessful startup in 2016 from technical, business, market, and product perspectives.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://docs.google.com/document/d/1cggP9GvdGp7weov9zuNu6YKgp4IXLbNIgwTrVBC8QX4/edit?usp=sharing">
-                          Glasscleaner xRD Doc
-                        </a><br>
-                        Early design doc for the Glasscleaner startup, combining use cases, personas, core problems, and solutions. Hybrid MRD/PRD/Design/status.
-                      </li>
-                      <li class="list-group-item">
-                        <a href="https://vpn.shewfig.tech/glasscleaner/about.php">
-                          Glasscleaner About Page
-                        </a><br>
-                        The marketing page for my failed startup: a B2C SASE service using Threat Intelligence to reduce online threats for Web users.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-info">
+            <div class="card-header with-border">
+              <h3 class="card-title">Blog Posts</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="https://www.f5.com/company/blog/don-t-bring-a-legacy-mindset-to-multi-cloud">
+                    "Don’t Bring a Legacy Mindset to Multi-Cloud"
+                  </a><br>
+                  Thought leadership to shift cloud architects away from legacy L3 networking and towards app-centric L7 and API service discovery between multiple sites and clouds.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://indeni.com/blog/palo-alto-networks-pan-os-upgrades-after-a-vulnerability-announcement/">
+                    "Palo Alto Networks PAN-OS upgrades after a vulnerability announcement"
+                  </a><br>
+                  An analysis of the prevalence of firewall upgrades after announcement of a serious vulnerability, based on proprietary telemetry.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://indeni.com/blog/5-ways-big-failures-grow-from-accumulated-small-failures/">
+                    "5 Ways Big Failures Grow from Accumulated Small Failures"
+                  </a><br>
+                  One of my personal favorites, this thought piece digs into why outages occur, and why it takes an exponential amount of effort for linear improvements.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-danger">
+            <div class="card-header with-border">
+              <h3 class="card-title">Collateral and Sales Enablement</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="Indeni and BPA_ FAQ.pdf">
+                    Product Comparison Chart
+                  </a><br>
+                  A visual comparison of Indeni's product vs two free tools from Palo Alto Networks.  Palo Alto Networks requested it to train their SEs, and Indeni adopted it as collateral.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://docs.google.com/presentation/d/1J98Q3TyDo8UZ-j0dd7WI9D3GBjFhgsXJToZ4_gblFVw/edit?usp=sharing">
+                    Sales Enablement Training
+                  </a><br>
+                  A synthetic internal Sales training deck, with feature/benefit messaging, target personas, and cold email templates.
+                </li>
+                <li class="list-group-item">
+                  <a href="Company Overview_August 2019.pdf">
+                    Company Overview 1-Pager
+                  </a><br>
+                  Single page doc to credential the company to customers.
+                </li>
+                <li class="list-group-item">
+                  <a href="F5 cookie labels.jpg">
+                    Pun humor on a give-away
+                  </a><br>
+                  Silly but topical and memorable labels on conference cookies.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-primary">
+            <div class="card-header with-border">
+              <h3 class="card-title">Videos</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="archive/videos/how-indeni-works.html">
+                    Explainer animation: "How Indeni Works"
+                  </a><br>
+                  A 90 second explainer animation, commissioned for the Indeni 7.0 launch. I wrote the script and shotlist, then managed the vendor during production.
+                </li>
+                <li class="list-group-item">
+                  <a href="archive/videos/f5-mcn-overview.html">
+                    Interview / presentation: F5 Distributed Cloud
+                  </a><br>
+                  An interview-style presentation demonstrating the value of connecting networks and applications among public and hybrid clouds at L3, L4, and L7.
+                </li>
+                <li class="list-group-item">
+                  <a href="archive/videos/cp-vsx-webinar.html">
+                    Webinar: Running [Check Point] VSX like a Pro
+                  </a><br>
+                  A webinar presented to a technical partner's user group demonstrating the value of our product.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-warning">
+            <div class="card-header with-border">
+              <h3 class="card-title">Technical Content</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="White Paper- How Indeni Works_1909.pdf">
+                    White paper: "How Indeni Works"
+                  </a><br>
+                  This WP is a nearly complete rewrite of a previous asset, to support the launch I led.  Its purpose is to alleviate an engineer's concerns during evaluation and equip them to convince the decision maker.
+                </li>
+                <li class="list-group-item">
+                  <a href="Indeni Product Evaluation Guide.pdf">
+                    Indeni Product Evaluation Guide
+                  </a><br>
+                  A guide so customers can DIY their own POCs and progress themselves down the funnel.  It has a "tech doc" feel with a carefully crafted length to be valuable but not overwhelming.
+                </li>
+                <li class="list-group-item">
+                  <a href="Check Point Deployment Trends 2020.pdf">
+                    Check Point Deployment Trends Report 2020
+                  </a><br>
+                  This report is a public-consumption tool to build Indeni's reputation, based on the telemetry data unique to their product.  I was the sole author and analyst for the report.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-success">
+            <div class="card-header with-border">
+              <h3 class="card-title">Code Samples</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="https://github.com/shewfig/macos-misc/blob/master/hammerspoon/mouse-unified.lua">
+                    Lua script modifying MacOS behavior
+                  </a><br>
+                  Lua module to extend <a href="https://www.hammerspoon.org/">HammerSpoon</a> to remap trackball buttons, written and documented to Sample Code quality.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://github.com/shewfig/log-utils/blob/master/dnsqltraq.sh">
+                    DNS lookup to IP tracker
+                  </a><br>
+                  Streaming dnsmasq log parser on a secure web gateway to provide domain mapping per remote IP per user lookup to de-anonymize CDN connections.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://github.com/shewfig/gmail-spam-sift/blob/master/spam-sift.py">
+                    Python script for Gmail API
+                  </a><br>
+                  Python script using Gmail API library to determine common phrases in spam messages.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://github.com/shewfig/shewfig.github.io/blob/main/index.html">
+                    HTML / JS for this Portfolio page
+                  </a><br>
+                  The source for this page, using Bootstrap for responsive layout and dynamic dark mode.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-info">
+            <div class="card-header with-border">
+              <h3 class="card-title">Entrepreneurialism</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="https://www.linkedin.com/pulse/reflections-failed-startup-jim-macleod/">
+                    Reflections on a Failed Startup
+                  </a><br>
+                  Retrospective for my own unsuccessful startup in 2016 from technical, business, market, and product perspectives.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://docs.google.com/document/d/1cggP9GvdGp7weov9zuNu6YKgp4IXLbNIgwTrVBC8QX4/edit?usp=sharing">
+                    Glasscleaner xRD Doc
+                  </a><br>
+                  Early design doc for the Glasscleaner startup, combining use cases, personas, core problems, and solutions. Hybrid MRD/PRD/Design/status.
+                </li>
+                <li class="list-group-item">
+                  <a href="https://vpn.shewfig.tech/glasscleaner/about.php">
+                    Glasscleaner About Page
+                  </a><br>
+                  The marketing page for my failed startup: a B2C SASE service using Threat Intelligence to reduce online threats for Web users.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
