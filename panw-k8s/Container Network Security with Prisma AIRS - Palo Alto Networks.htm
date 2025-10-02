@@ -191,7 +191,7 @@ jQuery.event.special.mousewheel={setup:function(c,a,b){a.includes&&a.includes("n
 		onmessage = function(oEvent) {
 			var urlPrefix = oEvent.data;
 			if (urlPrefix) {
-					importScripts(urlPrefix + '/apps/pan/public/userHeaderModel');
+					importScripts(urlPrefix + 'apps/pan/public/userHeaderModel');
 					if (userHeaderModel) {
 					postMessage(JSON.stringify(userHeaderModel));
 				}
@@ -250,19 +250,19 @@ var globalConfig = {"visitorProfilingEnabled":true,"visitorProfileCookieExpirati
 	window.PAN_LOAD_RECAPTCHA = true;
 	window.PAN_LOAD_RECAPTCHA_LANGUAGE = 'en_US';
 	window.PAN_IS_RECAPTCHA_LOADED = false;
-</script><style>@font-face{font-family:'TT Hoves';font-style:normal;font-weight:100;font-display:swap;src:local('TT Hoves Hairline'),local('TTHoves-Hairline'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Hairline_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:200;font-display:swap;src:local('TT Hoves Thin'),local('TTHoves-Thin'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Thin_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:300;font-display:swap;src:local('TT Hoves Light'),local('TTHoves-Light'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Light_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:400;font-display:swap;src:local('TT Hoves Regular'),local('TTHoves-Regular'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Regular_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:500;font-display:swap;src:local('TT Hoves Medium'),local('TTHoves-Medium'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Medium_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:600;font-display:swap;src:local('TT Hoves DemiBold'),local('TTHoves-DemiBold'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-DemiBold_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:700;font-display:swap;src:local('TT Hoves Bold'),local('TTHoves-Bold'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Bold_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:800;font-display:swap;src:local('TT Hoves ExtraBold'),local('TTHoves-ExtraBold'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-ExtraBold_optimized.woff2') format('woff2')}
-@font-face{font-family:'TT Hoves';font-style:normal;font-weight:900;font-display:swap;src:local('TT Hoves Black'),local('TTHoves-Black'),url('/etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Black_optimized.woff2') format('woff2')}
-@font-face{font-family:'CelestePro';font-style:normal;font-weight:400;font-display:swap;src:local('CelestePro'),local('CelestePro'),url('/etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-Book_optimized.woff2') format('woff2')}
-@font-face{font-family:'CelestePro';font-style:normal;font-weight:700;font-display:swap;src:local('CelestePro Bold'),local('CelestePro-Bold'),url('/etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-Bold_optimized.woff2') format('woff2')}
-@font-face{font-family:'CelestePro';font-style:normal;font-weight:800;font-display:swap;src:local('CelestePro Xbold'),local('CelestePro-Xbold'),url('/etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-XBold_optimized.woff2') format('woff2')}
-@font-face{font-family:'CelestePro';font-style:normal;font-weight:900;font-display:swap;src:local('CelestePro Black'),local('CelestePro-Black'),url('/etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-Black_optimized.woff2') format('woff2')}
+</script><style>@font-face{font-family:'TT Hoves';font-style:normal;font-weight:100;font-display:swap;src:local('TT Hoves Hairline'),local('TTHoves-Hairline'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Hairline_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:200;font-display:swap;src:local('TT Hoves Thin'),local('TTHoves-Thin'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Thin_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:300;font-display:swap;src:local('TT Hoves Light'),local('TTHoves-Light'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Light_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:400;font-display:swap;src:local('TT Hoves Regular'),local('TTHoves-Regular'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Regular_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:500;font-display:swap;src:local('TT Hoves Medium'),local('TTHoves-Medium'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Medium_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:600;font-display:swap;src:local('TT Hoves DemiBold'),local('TTHoves-DemiBold'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-DemiBold_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:700;font-display:swap;src:local('TT Hoves Bold'),local('TTHoves-Bold'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Bold_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:800;font-display:swap;src:local('TT Hoves ExtraBold'),local('TTHoves-ExtraBold'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-ExtraBold_optimized.woff2') format('woff2')}
+@font-face{font-family:'TT Hoves';font-style:normal;font-weight:900;font-display:swap;src:local('TT Hoves Black'),local('TTHoves-Black'),url('etc/clientlibs/clean/dependencies/fonts/tthoves/TTHoves-Black_optimized.woff2') format('woff2')}
+@font-face{font-family:'CelestePro';font-style:normal;font-weight:400;font-display:swap;src:local('CelestePro'),local('CelestePro'),url('etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-Book_optimized.woff2') format('woff2')}
+@font-face{font-family:'CelestePro';font-style:normal;font-weight:700;font-display:swap;src:local('CelestePro Bold'),local('CelestePro-Bold'),url('etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-Bold_optimized.woff2') format('woff2')}
+@font-face{font-family:'CelestePro';font-style:normal;font-weight:800;font-display:swap;src:local('CelestePro Xbold'),local('CelestePro-Xbold'),url('etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-XBold_optimized.woff2') format('woff2')}
+@font-face{font-family:'CelestePro';font-style:normal;font-weight:900;font-display:swap;src:local('CelestePro Black'),local('CelestePro-Black'),url('etc/clientlibs/clean/dependencies/fonts/ffceleste/CelestePro-Black_optimized.woff2') format('woff2')}
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -808,28 +808,28 @@ template{display:none}
 .btn{flex-grow:0;flex-shrink:0;display:inline-flex;font-family:TT Hoves,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:.875rem;font-weight:600;line-height:140%;letter-spacing:.02rem;color:#141414;text-align:center;vertical-align:middle;user-select:none;background-color:transparent;transition:box-shadow .15s ease-in-out}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}
 }
-.btn-dark.video.arrow i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
-.btn-light.video.arrow i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-dark.video.arrow i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-light.video.arrow i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
 .btn-primary,.btn-primary-outline,.btn-branded-gradient-outline,.btn-branded-gradient,.btn-black,.btn-white,.btn-gradient{display:inline-flex;padding:.35rem 1rem;border:.125rem solid transparent;border-radius:2.25rem;align-items:center;text-decoration:none;max-width:100%;text-align:left;background-color:#f76a43;color:#000;position:relative}
-.btn-primary i,.btn-primary-outline i,.btn-branded-gradient-outline i,.btn-branded-gradient i,.btn-black i,.btn-white i,.btn-gradient i{width:.9375rem;height:.9375rem;margin-left:.5rem;flex-grow:0;flex-shrink:0;display:inline-block;background-size:contain;background-position:center;background-repeat:no-repeat;background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
-.btn-primary.video i,.btn-primary-outline.video i,.btn-branded-gradient-outline.video i,.btn-branded-gradient.video i,.btn-black.video i,.btn-white.video i,.btn-gradient.video i{background-image:url('/etc/clientlibs/clean/imgs/video-play-black.svg')}
-.btn-primary.video.arrow i,.btn-primary-outline.video.arrow i,.btn-branded-gradient-outline.video.arrow i,.btn-branded-gradient.video.arrow i,.btn-black.video.arrow i,.btn-white.video.arrow i,.btn-gradient.video.arrow i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
-.btn-primary.dropdown-toggle i,.btn-primary-outline.dropdown-toggle i,.btn-branded-gradient-outline.dropdown-toggle i,.btn-branded-gradient.dropdown-toggle i,.btn-black.dropdown-toggle i,.btn-white.dropdown-toggle i,.btn-gradient.dropdown-toggle i{background-image:url('/etc/clientlibs/clean/imgs/chevron-down-black.svg');transition:transform .15s ease-in-out}
+.btn-primary i,.btn-primary-outline i,.btn-branded-gradient-outline i,.btn-branded-gradient i,.btn-black i,.btn-white i,.btn-gradient i{width:.9375rem;height:.9375rem;margin-left:.5rem;flex-grow:0;flex-shrink:0;display:inline-block;background-size:contain;background-position:center;background-repeat:no-repeat;background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-primary.video i,.btn-primary-outline.video i,.btn-branded-gradient-outline.video i,.btn-branded-gradient.video i,.btn-black.video i,.btn-white.video i,.btn-gradient.video i{background-image:url('etc/clientlibs/clean/imgs/video-play-black.svg')}
+.btn-primary.video.arrow i,.btn-primary-outline.video.arrow i,.btn-branded-gradient-outline.video.arrow i,.btn-branded-gradient.video.arrow i,.btn-black.video.arrow i,.btn-white.video.arrow i,.btn-gradient.video.arrow i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-primary.dropdown-toggle i,.btn-primary-outline.dropdown-toggle i,.btn-branded-gradient-outline.dropdown-toggle i,.btn-branded-gradient.dropdown-toggle i,.btn-black.dropdown-toggle i,.btn-white.dropdown-toggle i,.btn-gradient.dropdown-toggle i{background-image:url('etc/clientlibs/clean/imgs/chevron-down-black.svg');transition:transform .15s ease-in-out}
 .btn-primary-outline{border:2px solid #fa582d;background:0}
 .btn-primary-outline.white{border-color:#fff;color:#fff}
-.btn-primary-outline.white i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-primary-outline.white i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
 .btn-primary-outline.dark{color:#fff}
-.btn-primary-outline.dark i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-primary-outline.dark i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
 .btn-branded-gradient-outline{background:0}
 .btn-branded-gradient-outline.dark{color:#fff}
-.btn-branded-gradient-outline.dark i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-branded-gradient-outline.dark i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
 .btn-branded-gradient-outline.light{color:#141414}
-.btn-branded-gradient-outline.light i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-branded-gradient-outline.light i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
 .btn-branded-gradient::before,.btn-branded-gradient-outline::before{content:'';position:absolute;inset:0;border-radius:2.25rem;padding:.125rem;background-image:linear-gradient(90deg,#fa582d 0,#ffc328 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;top:-0.125rem;left:-0.125rem;right:-0.125rem;bottom:-0.125rem}
 .btn-branded-gradient{color:#141414;background-image:linear-gradient(90deg,#fa582d 0,#ffc328 100%)}
-.btn-branded-gradient i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-branded-gradient i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
 .btn-gradient{padding-left:0 !important;padding-right:0 !important;background:0;background-image:linear-gradient(90deg,#ffc328 0,#fa582d 75%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.btn-gradient i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-orange.svg')}
+.btn-gradient i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-orange.svg')}
 .show .btn-primary.dropdown-toggle i,.show .btn-primary-outline.dropdown-toggle i{transform:rotate(180deg)}
 .btn-block{display:block;width:100%;text-align:center}
 [data-type="strata"] .btn-primary{background-color:#ffcb06}
@@ -837,22 +837,22 @@ template{display:none}
 [data-type="strata"] .btn-branded-gradient::before,[data-type="strata"] .btn-branded-gradient-outline::before{background-image:linear-gradient(90deg,#ffcb06 0,#d07f05 100%)}
 [data-type="strata"] .btn-branded-gradient{background-image:linear-gradient(90deg,#ffcb06 0,#d07f05 100%)}
 [data-type="strata"] .btn-gradient{background-image:linear-gradient(90deg,#ffcb06 0,#d07f05 100%)}
-[data-type="strata"] .btn-gradient i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-yellow.svg')}
+[data-type="strata"] .btn-gradient i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-yellow.svg')}
 [data-type="prisma"] .btn-primary{background-color:#00c0e8}
 [data-type="prisma"] .btn-primary-outline{border-color:#00c0e8}
 [data-type="prisma"] .btn-branded-gradient::before,[data-type="prisma"] .btn-branded-gradient-outline::before{background-image:linear-gradient(90deg,#0173a4 0,#00c0e8 100%)}
 [data-type="prisma"] .btn-branded-gradient{background-image:linear-gradient(90deg,#0173a4 0,#00c0e8 100%)}
 [data-type="prisma"] .btn-gradient{background-image:linear-gradient(90deg,#0173a4 0,#00c0e8 100%)}
-[data-type="prisma"] .btn-gradient i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-blue.svg')}
+[data-type="prisma"] .btn-gradient i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-blue.svg')}
 [data-type="cortex"] .btn-primary,[data-type="cortexxdr"] .btn-primary,[data-type="prismaCloudReBrand"] .btn-primary{background-color:#0c6}
 [data-type="cortex"] .btn-primary-outline,[data-type="cortexxdr"] .btn-primary-outline,[data-type="prismaCloudReBrand"] .btn-primary-outline{border-color:#0c6}
 [data-type="cortex"] .btn-branded-gradient::before,[data-type="cortexxdr"] .btn-branded-gradient::before,[data-type="prismaCloudReBrand"] .btn-branded-gradient::before,[data-type="cortex"] .btn-branded-gradient-outline::before,[data-type="cortexxdr"] .btn-branded-gradient-outline::before,[data-type="prismaCloudReBrand"] .btn-branded-gradient-outline::before{background-image:linear-gradient(90deg,#0c6 0,#0a6235 100%)}
 [data-type="cortex"] .btn-branded-gradient,[data-type="cortexxdr"] .btn-branded-gradient,[data-type="prismaCloudReBrand"] .btn-branded-gradient{background-image:linear-gradient(90deg,#0c6 0,#0a6235 100%)}
 [data-type="cortex"] .btn-gradient,[data-type="cortexxdr"] .btn-gradient,[data-type="prismaCloudReBrand"] .btn-gradient{background-image:linear-gradient(90deg,#0c6 0,#0a6235 100%)}
-[data-type="cortex"] .btn-gradient i,[data-type="cortexxdr"] .btn-gradient i,[data-type="prismaCloudReBrand"] .btn-gradient i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-green.svg')}
+[data-type="cortex"] .btn-gradient i,[data-type="cortexxdr"] .btn-gradient i,[data-type="prismaCloudReBrand"] .btn-gradient i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-green.svg')}
 [data-type="unit42"] .btn-primary{color:#141414;background-color:#d9551d;background-image:linear-gradient(to right,#d9551d 25%,#d64420 75%)}
-[data-type="unit42"] .btn-primary i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
-[data-type="unit42"] .btn-primary.video i{background-image:url('/etc/clientlibs/clean/imgs/video-play-black.svg')}
+[data-type="unit42"] .btn-primary i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+[data-type="unit42"] .btn-primary.video i{background-image:url('etc/clientlibs/clean/imgs/video-play-black.svg')}
 [data-type="unit42"] .btn-primary-outline{border-color:#d9551d}
 [data-type="unit42"] .btn-branded-gradient::before,[data-type="unit42"] .btn-branded-gradient-outline::before{background-image:linear-gradient(90deg,#e68d67 0,#d9551d 100%)}
 [data-type="unit42"] .btn-branded-gradient{background-image:linear-gradient(90deg,#e68d67 0,#d9551d 100%)}
@@ -866,25 +866,25 @@ template{display:none}
 .btn-primary[data-type="cortex"],.btn-primary[data-type="cortexxdr"],.btn-primary[data-type="prismaCloudReBrand"]{background-color:#0c6;background-image:none}
 .btn-primary-outline[data-type="cortex"],.btn-primary-outline[data-type="cortexxdr"],.btn-primary-outline[data-type="prismaCloudReBrand"]{border-color:#0c6}
 .btn-primary[data-type="unit42"]{color:#141414;background-color:#d9551d;background-image:linear-gradient(to right,#d9551d 25%,#d64420 75%)}
-.btn-primary[data-type="unit42"] i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
-.btn-primary[data-type="unit42"].video i{background-image:url('/etc/clientlibs/clean/imgs/video-play-black.svg')}
+.btn-primary[data-type="unit42"] i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-primary[data-type="unit42"].video i{background-image:url('etc/clientlibs/clean/imgs/video-play-black.svg')}
 .btn-primary-outline[data-type="unit42"]{border-color:#d9551d}
 .btn-black{background-color:#141414;color:#fff}
-.btn-black i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
-.btn-black.video i{background-image:url('/etc/clientlibs/clean/imgs/video-play-white.svg')}
-.btn-black.video.arrow i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
-.btn-black.dropdown-toggle i{background-image:url('/etc/clientlibs/clean/imgs/chevron-down-white.svg')}
+.btn-black i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-black.video i{background-image:url('etc/clientlibs/clean/imgs/video-play-white.svg')}
+.btn-black.video.arrow i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-black.dropdown-toggle i{background-image:url('etc/clientlibs/clean/imgs/chevron-down-white.svg')}
 .btn-white{background-color:#fff;color:#141414}
-.btn-white i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-white i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
 .btn-light,.btn-outline-light{display:inline-flex;padding:.35rem 1rem;border:.125rem solid transparent;border-radius:2.25rem;align-items:center;text-decoration:none;max-width:100%;text-align:left;background:0;color:#141414;position:relative}
-.btn-light i,.btn-outline-light i{width:.9375rem;height:.9375rem;margin-left:.5rem;flex-grow:0;flex-shrink:0;display:inline-block;background-size:contain;background-position:center;background-repeat:no-repeat;background-image:url('/etc/clientlibs/clean/imgs/arrow-right-black.svg')}
-.btn-light.video i,.btn-outline-light.video i{background-image:url('/etc/clientlibs/clean/imgs/video-play-black.svg')}
+.btn-light i,.btn-outline-light i{width:.9375rem;height:.9375rem;margin-left:.5rem;flex-grow:0;flex-shrink:0;display:inline-block;background-size:contain;background-position:center;background-repeat:no-repeat;background-image:url('etc/clientlibs/clean/imgs/arrow-right-black.svg')}
+.btn-light.video i,.btn-outline-light.video i{background-image:url('etc/clientlibs/clean/imgs/video-play-black.svg')}
 .btn-outline-light{border:2px solid #141414}
 .show>.btn-light.dropdown-toggle{color:#141414;background-color:#fff;border-color:#fff}
 .show>.btn-outline-light.dropdown-toggle{color:#fff;border-color:#141414;background-color:#141414}
 .btn-dark,.btn-outline-dark{display:inline-flex;padding:.35rem 1rem;border:.125rem solid transparent;border-radius:2.25rem;align-items:center;text-decoration:none;max-width:100%;text-align:left;background:0;color:#fff;position:relative}
-.btn-dark i,.btn-outline-dark i{width:.9375rem;height:.9375rem;margin-left:.5rem;flex-grow:0;flex-shrink:0;display:inline-block;background-size:contain;background-position:center;background-repeat:no-repeat;background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}
-.btn-dark.video i,.btn-outline-dark.video i{background-image:url('/etc/clientlibs/clean/imgs/video-play-white.svg')}
+.btn-dark i,.btn-outline-dark i{width:.9375rem;height:.9375rem;margin-left:.5rem;flex-grow:0;flex-shrink:0;display:inline-block;background-size:contain;background-position:center;background-repeat:no-repeat;background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}
+.btn-dark.video i,.btn-outline-dark.video i{background-image:url('etc/clientlibs/clean/imgs/video-play-white.svg')}
 .btn-outline-dark{border:2px solid #fff}
 .show>.btn-dark.dropdown-toggle{color:#fff;background-color:#141414;border-color:#141414}
 .show>.btn-outline-dark.dropdown-toggle{color:#141414;border-color:#fff;background-color:#fff}
@@ -1517,7 +1517,7 @@ h8,.h8{font-size:1rem}
 .panClean figure.right-bottom img,.panClean [class^="ar-"].right-bottom img,.panClean [class^="sm-ar-"].right-bottom img,.panClean [class^="md-ar-"].right-bottom img,.panClean [class^="lg-ar-"].right-bottom img,.panClean [class^="xl-ar-"].right-bottom img{object-position:right bottom;font-family:'object-position: right bottom;'}
 .panClean ul.check-list{padding:0;margin:0 0 25px;list-style:none;font-family:TT Hoves,Arial,"Helvetica Neue",Helvetica,sans-serif;text-align:left;font-weight:400;color:#5f5f5f;font-size:14px;line-height:24px}
 .panClean ul.check-list>li{position:relative;padding:10px 0 10px 40px}
-.panClean ul.check-list>li::before{content:url('/etc/clientlibs/clean/imgs/check-orange.svg');position:absolute;top:14px;left:0}
+.panClean ul.check-list>li::before{content:url('etc/clientlibs/clean/imgs/check-orange.svg');position:absolute;top:14px;left:0}
 .panClean ul.check-list.theme-light{color:#fff}
 html{scroll-behavior:smooth}
 .no-scroll{overflow:hidden !important}
@@ -1551,10 +1551,10 @@ html{scroll-behavior:smooth}
 .glider-prev,.glider-next{position:absolute;top:50%;width:50px;height:50px;border-radius:50px;z-index:10;display:flex;align-items:center;justify-content:center;background-size:24px 24px;background-position:center;background-repeat:no-repeat;border:2px solid #fa582d;background-color:#fa582d}
 .glider-prev.glider-button-white.glider-button-white,.glider-next.glider-button-white.glider-button-white{border-color:#fff;background-color:transparent}
 .glider-prev.glider-button-black.glider-button-black,.glider-next.glider-button-black.glider-button-black{border-color:#141414;background-color:#fff}
-.glider-prev{left:15px;right:auto;background-image:url('/etc/clientlibs/clean/imgs/chevron-left-black.svg')}
-.glider-prev.glider-button-white.glider-button-white{background-image:url('/etc/clientlibs/clean/imgs/chevron-left-white.svg')}
-.glider-next{right:15px;left:auto;background-image:url('/etc/clientlibs/clean/imgs/chevron-right-black.svg')}
-.glider-next.glider-button-white.glider-button-white{background-image:url('/etc/clientlibs/clean/imgs/chevron-right-white.svg')}
+.glider-prev{left:15px;right:auto;background-image:url('etc/clientlibs/clean/imgs/chevron-left-black.svg')}
+.glider-prev.glider-button-white.glider-button-white{background-image:url('etc/clientlibs/clean/imgs/chevron-left-white.svg')}
+.glider-next{right:15px;left:auto;background-image:url('etc/clientlibs/clean/imgs/chevron-right-black.svg')}
+.glider-next.glider-button-white.glider-button-white{background-image:url('etc/clientlibs/clean/imgs/chevron-right-white.svg')}
 [data-type="strata"] .glider-prev,[data-type="strata"] .glider-next{background-color:#ffcb06;border-color:#ffcb06}
 [data-type="prisma"] .glider-prev,[data-type="prisma"] .glider-next{background-color:#00c0e8;border-color:#00c0e8}
 [data-type="cortex"] .glider-prev,[data-type="cortex"] .glider-next{background-color:#0c6;border-color:#0c6}
@@ -1595,7 +1595,7 @@ html{scroll-behavior:smooth}
 .cleanDynamicFooter .footer-bottom .social-icons .social-icon img{width:100%;height:100%}
 .cleanDynamicFooter .dropdown .btn-language{border-radius:40px;padding:10px 15px 10px 35px;border:1px solid #141414;background-color:#fff;background-size:20px 20px;background-position:15px center;background-repeat:no-repeat;font-size:18px}
 .cleanDynamicFooter .dropdown .btn-language span{padding:0 15px 0 5px}
-.cleanDynamicFooter .dropdown .btn-language i{background-image:url('/etc/clientlibs/clean/imgs/chevron-down-black.svg');width:24px;height:24px;background-position:center;background-size:contain;background-repeat:no-repeat;transition:transform .15s ease-in-out}
+.cleanDynamicFooter .dropdown .btn-language i{background-image:url('etc/clientlibs/clean/imgs/chevron-down-black.svg');width:24px;height:24px;background-position:center;background-size:contain;background-repeat:no-repeat;transition:transform .15s ease-in-out}
 @media(min-width:768px) and (max-width:1399.98px){.cleanDynamicFooter .mega-footer .col-md-12 .columns .list-unstyled{flex:0 0 33.33333%;max-width:33.33333%}
 .cleanDynamicFooter .mega-footer .col-md-4{flex:0 0 50%;max-width:50%}
 .cleanDynamicFooter .footer-bottom .pan-logo{width:190px;height:35px}
@@ -1611,7 +1611,7 @@ html{scroll-behavior:smooth}
 .cleanDynamicFooter .mega-footer{padding:45px 0}
 .cleanDynamicFooter .mega-footer .heading-col{position:relative;border-bottom:0;cursor:pointer;margin-bottom:5px}
 .cleanDynamicFooter .mega-footer .heading-col .nav-headline{padding-bottom:15px}
-.cleanDynamicFooter .mega-footer .heading-col:after{content:'';position:absolute;right:0;top:50%;margin-top:-12px;display:inline-flex;width:20px;height:20px;background-image:url('/etc/clientlibs/clean/imgs/chevron-down-black.svg');background-position:center;background-size:contain;background-repeat:no-repeat;transition:transform .15s ease-in-out;z-index:0}
+.cleanDynamicFooter .mega-footer .heading-col:after{content:'';position:absolute;right:0;top:50%;margin-top:-12px;display:inline-flex;width:20px;height:20px;background-image:url('etc/clientlibs/clean/imgs/chevron-down-black.svg');background-position:center;background-size:contain;background-repeat:no-repeat;transition:transform .15s ease-in-out;z-index:0}
 .cleanDynamicFooter .mega-footer .heading-col:not(.collapsed):after{transform:rotate(180deg)}
 .cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title{position:relative}
 .cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title a,.cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title span{position:relative;padding:10px 25px 15px 20px;text-decoration:none;z-index:1}
@@ -1624,7 +1624,7 @@ html{scroll-behavior:smooth}
 .cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title.show.collapse:after{transform:rotate(0)}
 .cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title.hide.expand:after{transform:rotate(180deg)}
 .cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title.hide.collapse:after{transform:rotate(0)}
-.cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title:after{content:'';position:absolute;right:0;top:50%;margin-top:-12px;display:inline-flex;width:20px;height:20px;background-image:url('/etc/clientlibs/clean/imgs/chevron-down-black.svg');background-position:center;background-size:contain;background-repeat:no-repeat;opacity:.65;transition:transform .15s ease-in-out}
+.cleanDynamicFooter .mega-footer .columns .list-unstyled>li.sub-title:after{content:'';position:absolute;right:0;top:50%;margin-top:-12px;display:inline-flex;width:20px;height:20px;background-image:url('etc/clientlibs/clean/imgs/chevron-down-black.svg');background-position:center;background-size:contain;background-repeat:no-repeat;opacity:.65;transition:transform .15s ease-in-out}
 .cleanDynamicFooter .mega-footer .columns .list-unstyled>li.link a,.cleanDynamicFooter .mega-footer .columns .list-unstyled>li.link span{padding:5px 0 5px 40px}
 .cleanDynamicFooter .mega-footer .columns.show .list-unstyled>li:first-child{display:list-item}
 .cleanDynamicFooter .mega-footer .col{flex-basis:100%;max-width:100%}
@@ -1683,7 +1683,7 @@ html{scroll-behavior:smooth}
 .panClean:not([class*='pan-template-dynamic']):not(.new-footer-old-template) .cleanDynamicFooter h4,.panClean:not([class*='pan-template-dynamic']):not(.new-footer-old-template) .cleanDynamicFooter .h4{font-size:1.375rem;line-height:130%}
 @media(min-width:768px){.panClean:not([class*='pan-template-dynamic']):not(.new-footer-old-template) .cleanDynamicFooter h4,.panClean:not([class*='pan-template-dynamic']):not(.new-footer-old-template) .cleanDynamicFooter .h4{font-size:calc(1.375rem + (48 - 22) *((100vw - 768px) /(1920 - 768)))}
 }.panClean .linkHelper .btn-backgroundImage{padding-bottom:56.25%;position:relative;width:20vw;font-size:0;line-height:0;background-repeat:no-repeat;background-position:center;background-size:cover}
-.panClean .linkHelper .btn-backgroundImage i{margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;padding:1.125rem;box-shadow:0 .88px 13.25px 0 rgba(0,0,0,0.6);background-image:url("/etc/clientlibs/clean/imgs/video-play-black.svg");background-repeat:no-repeat;background-position:center;background-size:.5rem .5rem;border-radius:50%}
+.panClean .linkHelper .btn-backgroundImage i{margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;padding:1.125rem;box-shadow:0 .88px 13.25px 0 rgba(0,0,0,0.6);background-image:url("etc/clientlibs/clean/imgs/video-play-black.svg");background-repeat:no-repeat;background-position:center;background-size:.5rem .5rem;border-radius:50%}
 .panClean .linkHelper .btn-backgroundImage:hover i{opacity:.7}
 @media(max-width:1199.98px){.panClean .linkHelper .btn-backgroundImage{width:34.6354166vw}
 .panClean .linkHelper .btn-backgroundImage i{padding:1rem}
@@ -1701,7 +1701,7 @@ html{scroll-behavior:smooth}
 .panClean .linkHelper [data-type="unit42"] .btn-primary-outline{border-color:#c84727}
 .panClean .linkHelper [data-type="default"] .btn-primary,.panClean .linkHelper [data-type="paloaltonetworks"] .btn-primary{background-color:#fa582d}
 .panClean .linkHelper .btn-gradient-outline.dark{color:#fff}
-.panClean .linkHelper .btn-gradient-outline.dark>i{background-image:url('/etc/clientlibs/clean/imgs/arrow-right-white.svg')}.panClean .htmlComp .base-component-spacer{height:auto !important}
+.panClean .linkHelper .btn-gradient-outline.dark>i{background-image:url('etc/clientlibs/clean/imgs/arrow-right-white.svg')}.panClean .htmlComp .base-component-spacer{height:auto !important}
 .panClean .htmlComp .base-component-spacer.spacer-none{padding-top:0}
 .panClean .htmlComp .base-component-spacer.spacer-small{padding-top:2rem}
 .panClean .htmlComp .base-component-spacer.spacer-medium{padding-top:4rem}
@@ -1749,9 +1749,9 @@ html{scroll-behavior:smooth}
 .nav-link{display:block;padding:.5rem 1rem}
 .nav-select{display:flex;flex-grow:1;font-family:TT Hoves,Decimal,Arial,"Helvetica Neue",Helvetica,sans-serif;font-weight:500;line-height:1em;width:100%;max-width:100%;box-sizing:border-box;margin:0;border:0;border-bottom:2px solid transparent;box-shadow:none;border-radius:0;-moz-appearance:none;-webkit-appearance:none;appearance:none;background-color:transparent;background-repeat:no-repeat,repeat;background-position:right 0 center,0 0;padding:15px 30px 15px 0;transition:border-color .25s ease-in-out}
 .nav-select option{font-family:TT Hoves,Decimal,Arial,"Helvetica Neue",Helvetica,sans-serif;font-weight:500}
-.nav-select.light{color:#141414;border-color:rgba(20,20,20,0.5);background-image:url('/etc/clientlibs/clean/imgs/chevron-down-black.svg'),linear-gradient(to bottom,transparent 0,transparent 100%)}
+.nav-select.light{color:#141414;border-color:rgba(20,20,20,0.5);background-image:url('etc/clientlibs/clean/imgs/chevron-down-black.svg'),linear-gradient(to bottom,transparent 0,transparent 100%)}
 .nav-select.light option{color:#141414}
-.nav-select.dark{color:#fff;border-color:rgba(255,255,255,0.5);background-image:url('/etc/clientlibs/clean/imgs/chevron-down-white.svg'),linear-gradient(to bottom,transparent 0,transparent 100%)}
+.nav-select.dark{color:#fff;border-color:rgba(255,255,255,0.5);background-image:url('etc/clientlibs/clean/imgs/chevron-down-white.svg'),linear-gradient(to bottom,transparent 0,transparent 100%)}
 .nav-select.dark option{color:#fff;background-color:#141414}
 .nav-tabs{justify-content:space-between}
 .nav-tabs .nav-item{flex-grow:1;flex-shrink:0;text-align:center;margin-bottom:-2px}
@@ -1825,7 +1825,7 @@ html{scroll-behavior:smooth}
 .product-form .sideForm .show{display:block}
 .product-form .sideForm .hide{display:none}
 .product-form .sideForm .form-container{background:#141414;padding:2rem;border:1px solid #b9b9b9;border-radius:20px;display:flex}
-.product-form .sideForm .btn-back i{background-image:url('/etc/clientlibs/clean/imgs/arrow-left-black.svg');margin-left:0;margin-right:.75rem}
+.product-form .sideForm .btn-back i{background-image:url('etc/clientlibs/clean/imgs/arrow-left-black.svg');margin-left:0;margin-right:.75rem}
 .product-form .sideForm .g-recaptcha{display:flex}
 .product-form .title-section{margin-bottom:35px}
 .product-form .title-section .title{margin-bottom:18px;color:#fff}
@@ -1840,7 +1840,7 @@ html{scroll-behavior:smooth}
 .product-form .form .checkbox{margin-top:50px;margin-bottom:30px;display:flex;align-items:center}
 .product-form .form .checkbox span:last-child{color:#fff}
 .product-form .form .checkbox input[type="checkbox"]{display:none;position:absolute;box-sizing:border-box;padding:0}
-.product-form .form .checkbox input[type="checkbox"]:checked+.icon:before{content:'';width:29px;height:30px;display:inline-block;background-repeat:no-repeat !important;background-size:contain !important;background-position:center;position:absolute;background-image:url('/etc/clientlibs/clean/imgs/check-black.svg')}
+.product-form .form .checkbox input[type="checkbox"]:checked+.icon:before{content:'';width:29px;height:30px;display:inline-block;background-repeat:no-repeat !important;background-size:contain !important;background-position:center;position:absolute;background-image:url('etc/clientlibs/clean/imgs/check-black.svg')}
 .product-form .form .checkbox input[type="checkbox"]+.icon{width:33px;height:33px;border-radius:3px;border:2px solid #b9b9b9;background:#FFF;margin:0 14px 0 0;display:inline-block;flex:0 0 33px;position:relative}
 .product-form .form .legal{color:#fff}
 .product-form .form .legal a{color:#fff;text-decoration:underline}
@@ -1985,12 +1985,12 @@ html{scroll-behavior:smooth}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards .partner-variation .symco-card-desc{margin-top:5px}
 }
 .symcoTeaserBlock .symco-teaser-cards .symco-cards .partner-variation .symco-card-title,.symcoTeaserBlock .symco-teaser-cards .symco-cards .partner-variation .symco-card-desc{color:#fff}
-.symcoTeaserBlock .symco-teaser-cards .btn-link.light.btn-see-more i{background-image:url('/etc/clientlibs/clean/imgs/plus-black.svg')}
+.symcoTeaserBlock .symco-teaser-cards .btn-link.light.btn-see-more i{background-image:url('etc/clientlibs/clean/imgs/plus-black.svg')}
 .symcoTeaserBlock .symco-teaser-cards .btn-see-more{align-items:center}
 .symcoTeaserBlock .symco-teaser-cards .btn-see-more i{display:inline-flex;margin-left:.25rem;width:16px;height:16px;background-size:contain;background-repeat:no-repeat}
 .symcoTeaserBlock .symco-teaser-cards .hover-content{position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;transform:translateY(100%);background-color:#141414;transition:transform .15s ease-in-out;padding:calc(30% + 27px) 15px 15px;text-align:center}
 .symcoTeaserBlock .symco-teaser-cards .hover-content .desc{color:#fff}
-.symcoTeaserBlock .symco-teaser-cards .hover-content .btn-close{position:absolute;top:1rem;right:1rem;width:1.5rem;height:1.5rem;border-radius:1.5rem;background-size:contain;background-repeat:no-repeat;background-position:center;border:0;background-color:transparent;background-image:url('/etc/clientlibs/clean/imgs/x-white.svg')}
+.symcoTeaserBlock .symco-teaser-cards .hover-content .btn-close{position:absolute;top:1rem;right:1rem;width:1.5rem;height:1.5rem;border-radius:1.5rem;background-size:contain;background-repeat:no-repeat;background-position:center;border:0;background-color:transparent;background-image:url('etc/clientlibs/clean/imgs/x-white.svg')}
 @media(min-width:768px){.symcoTeaserBlock .symco-teaser-cards .symco-teaser-header{gap:8px;padding:0 40px 50px}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards .symco-card .logo{width:45%}
 .symcoTeaserBlock .symco-teaser-cards .hover-content{padding-top:calc(45% + 27px)}
@@ -2049,11 +2049,11 @@ html{scroll-behavior:smooth}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.large-with-border .symco-card .image figure{padding-bottom:0;margin-bottom:-8px;height:300px}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.large-with-border .symco-card .text-container{gap:16px}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.large-with-border .symco-card .btn-white{background-color:#141414;color:#fff}
-.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.large-with-border .symco-card .btn-white i{background-image:url("/etc/clientlibs/clean/imgs/arrow-right-white.svg")}
+.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.large-with-border .symco-card .btn-white i{background-image:url("etc/clientlibs/clean/imgs/arrow-right-white.svg")}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.large-with-border .symco-card .btn-white:hover{background-color:#141414;opacity:.8}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.large-with-border .symco-card{background:#0d0d0d;border-bottom-color:#fff}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.large-with-border .symco-card .btn-black{background-color:#fff;color:#141414}
-.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.large-with-border .symco-card .btn-black i{background-image:url("/etc/clientlibs/clean/imgs/arrow-right-black.svg")}
+.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.large-with-border .symco-card .btn-black i{background-image:url("etc/clientlibs/clean/imgs/arrow-right-black.svg")}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.large-with-border .symco-card .btn-black:hover{background-color:#e6e6e6}
 @media(max-width:1199.98px){.symcoTeaserBlock .symco-teaser-cards .symco-cards.large-with-border .symco-card{flex-direction:column}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.large-with-border .symco-card .text-container{gap:24px}
@@ -2073,10 +2073,10 @@ html{scroll-behavior:smooth}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.ai-variation .symco-card ul{width:100%}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.ai-variation .symco-card ul:last-of-type{margin-bottom:0}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.ai-variation .symco-card ul:last-of-type li:last-of-type .btn{margin-bottom:0rem}
-.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.ai-variation .symco-card .btn-white i{background-image:url("/etc/clientlibs/clean/imgs/arrow-right-white.svg")}
+.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.ai-variation .symco-card .btn-white i{background-image:url("etc/clientlibs/clean/imgs/arrow-right-white.svg")}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-light.ai-variation .symco-card .btn-white:hover{background-color:#141414;opacity:.8}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.ai-variation .symco-card .btn-black{background-color:#fff;color:#141414}
-.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.ai-variation .symco-card .btn-black i{background-image:url("/etc/clientlibs/clean/imgs/arrow-right-black.svg")}
+.symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.ai-variation .symco-card .btn-black i{background-image:url("etc/clientlibs/clean/imgs/arrow-right-black.svg")}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.ai-variation .symco-card .btn-black:hover{background-color:#e6e6e6}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.ai-variation .symco-card .btn-primary-outline{color:#e76f01;background:linear-gradient(102.22deg,#ffc328 -1.1%,#e66e00 56.97%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;border:0;padding-left:0;margin-bottom:0;border-radius:0;width:100%;justify-content:space-between}
 .symcoTeaserBlock .symco-teaser-cards .symco-cards.theme-dark.ai-variation .symco-card .btn-primary-outline i{filter:invert(69%) sepia(91%) saturate(5852%) hue-rotate(13deg) brightness(103%) contrast(99%)}
@@ -2095,7 +2095,7 @@ html{scroll-behavior:smooth}
 .pillar-text-feature .youtubeVideo{position:absolute !important}
 .pillar-text-feature .order-0{order:0}
 .pillar-text-feature .order-1{order:1}
-.pillar-text-feature .icon.magnifying-glass{background-image:url("/etc/clientlibs/clean/imgs/2025/magnifying-glass-plus.svg");background-size:contain;background-repeat:no-repeat;background-position:center;filter:invert(1);height:1.5rem;width:1.5rem;display:inline-block;position:absolute;top:1rem;left:1rem;z-index:2}
+.pillar-text-feature .icon.magnifying-glass{background-image:url("etc/clientlibs/clean/imgs/2025/magnifying-glass-plus.svg");background-size:contain;background-repeat:no-repeat;background-position:center;filter:invert(1);height:1.5rem;width:1.5rem;display:inline-block;position:absolute;top:1rem;left:1rem;z-index:2}
 .pillar-text-feature figure.show-mag::after{content:"";height:3.5rem;width:3.5rem;position:absolute;z-index:1;top:0;left:0;background:radial-gradient(#141414 25%,rgba(0,0,0,0) 75%)}
 .pillar-text-feature .text-content{margin-top:2rem}
 .pillar-text-feature .text-content .eyebrow{display:flex;align-items:center;color:#5f5f5f}
@@ -2113,7 +2113,7 @@ html{scroll-behavior:smooth}
 .pillar-text-feature .video-container .playbtn:before,.pillar-text-feature .video-container .playbtn:after{content:"";position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%);display:block;border-radius:50%;background:#fff}
 .pillar-text-feature .video-container .playbtn:before{z-index:0;width:100px;height:100px;opacity:.2;box-shadow:0 2px 30px rgba(0,0,0,0.6)}
 .pillar-text-feature .video-container .playbtn:after{z-index:1;width:80px;height:80px}
-.pillar-text-feature .video-container .playbtn i{width:20px;height:20px;flex-grow:0;flex-shrink:0;margin:0;display:inline-block;background-image:url('/etc/clientlibs/clean/imgs/video-play-black.svg');background-size:contain;background-position:center;background-repeat:no-repeat;z-index:2}
+.pillar-text-feature .video-container .playbtn i{width:20px;height:20px;flex-grow:0;flex-shrink:0;margin:0;display:inline-block;background-image:url('etc/clientlibs/clean/imgs/video-play-black.svg');background-size:contain;background-position:center;background-repeat:no-repeat;z-index:2}
 .pillar-text-feature .body-sans-1{font-family:TT Hoves,Arial,"Helvetica Neue",Helvetica,sans-serif;color:#141414;line-height:150%}
 .pillar-text-feature .body-sans-1{font-size:1rem}
 @media(min-width:768px){.pillar-text-feature.side .text-content{margin-top:0}
@@ -2262,11 +2262,11 @@ to{transform:translateX(0)}
 .panClean .pan-page-alert .pan-page-alert-text a:hover{border-color:transparent}
 @media(max-width:991.98px){.panClean .pan-page-alert .pan-page-alert-text{-webkit-line-clamp:1;max-height:60px}
 }
-.panClean .pan-page-alert .pan-page-alert-close{margin:0 15px;width:24px;height:24px;border-radius:24px;background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url('/etc/clientlibs/clean/imgs/x-white.svg');border:0;background-color:transparent}
+.panClean .pan-page-alert .pan-page-alert-close{margin:0 15px;width:24px;height:24px;border-radius:24px;background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url('etc/clientlibs/clean/imgs/x-white.svg');border:0;background-color:transparent}
 .panClean .pan-page-alert.pan-page-alert-light{background-color:#f4f4f2}
 .panClean .pan-page-alert.pan-page-alert-light .pan-page-alert-text{color:#141414}
 .panClean .pan-page-alert.pan-page-alert-light .pan-page-alert-text a{color:#141414}
-.panClean .pan-page-alert.pan-page-alert-light .pan-page-alert-close{background-image:url('/etc/clientlibs/clean/imgs/x-black.svg')}
+.panClean .pan-page-alert.pan-page-alert-light .pan-page-alert-close{background-image:url('etc/clientlibs/clean/imgs/x-black.svg')}
 .panClean .pan-page-alert.pan-page-alert-light .pan-page-alert-close svg path{stroke:#000}
 .panClean .pan-page-alert.pan-page-alert-black{background-color:#141414}
 .panClean .pan-page-alert.pan-page-alert-black .pan-page-alert-close svg path{stroke:#fff}
@@ -2313,8 +2313,8 @@ to{transform:translateX(0)}
 .panClean .pan-page-alert.alert-2023.pan-page-alert-black{background:#000;background-image:linear-gradient(124deg,#000 25%,#1f1f1f 43%);background-size:cover;background-position:center}
 .panClean .pan-page-alert.alert-2023.pan-page-alert-black .pan-page-alert-text{color:#fff}
 .panClean .pan-page-alert.alert-2023.pan-page-alert-black .pan-page-alert-text a{color:#fff}
-.panClean .pan-page-alert.alert-2023.pan-page-alert-black .pan-page-alert-left-arr{background-color:transparent;background-image:url('/etc/clientlibs/clean/imgs/chevron-left-white.svg')}
-.panClean .pan-page-alert.alert-2023.pan-page-alert-black .pan-page-alert-right-arr{background-color:transparent;background-image:url('/etc/clientlibs/clean/imgs/chevron-right-white.svg')}
+.panClean .pan-page-alert.alert-2023.pan-page-alert-black .pan-page-alert-left-arr{background-color:transparent;background-image:url('etc/clientlibs/clean/imgs/chevron-left-white.svg')}
+.panClean .pan-page-alert.alert-2023.pan-page-alert-black .pan-page-alert-right-arr{background-color:transparent;background-image:url('etc/clientlibs/clean/imgs/chevron-right-white.svg')}
 .panClean .pan-page-alert.alert-2023.open{display:block;z-index:1001}
 @media(max-width:1599.98px){.panClean .pan-page-alert.alert-2023 .pan-page-alert-text{font-size:16px;line-height:1.5;letter-spacing:.32px}
 .panClean .pan-page-alert.alert-2023 .pan-page-alert-actions .btn-link{font-size:12px;line-height:16px}
@@ -2402,15 +2402,15 @@ to{transform:translateX(0)}
 }
 @media(max-width:1199.98px){.panClean .nav2021Component.light:not(.absolute) .pan-2021-nav{background-color:#f4f4f2}
 .panClean .nav2021Component.light .pan-2021-nav{background:0}
-.panClean .nav2021Component.light .pan-2021-nav>.nav-open{background-image:url('/etc/clientlibs/clean/imgs/menu-alt-black.svg')}
-.panClean .nav2021Component.light .pan-2021-nav>.mobile-search{background-image:url('/etc/clientlibs/clean/imgs/search-black.svg')}
-.panClean .nav2021Component.light .pan-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/pan-logo-dark.svg')}
+.panClean .nav2021Component.light .pan-2021-nav>.nav-open{background-image:url('etc/clientlibs/clean/imgs/menu-alt-black.svg')}
+.panClean .nav2021Component.light .pan-2021-nav>.mobile-search{background-image:url('etc/clientlibs/clean/imgs/search-black.svg')}
+.panClean .nav2021Component.light .pan-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/pan-logo-dark.svg')}
 .panClean .nav2021Component.light .pan-2021-nav>.nav-open:active,.panClean .nav2021Component.light .pan-2021-nav>.mobile-search:active{background-color:rgba(255,255,255,0.15)}
-.panClean .nav2021Component.light.alt-light .pan-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/pan-logo-alt-dark.svg')}
+.panClean .nav2021Component.light.alt-light .pan-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/pan-logo-alt-dark.svg')}
 .panClean .nav2021Component.dark .pan-2021-nav{background:0}
-.panClean .nav2021Component.dark .pan-2021-nav>.nav-open{background-image:url('/etc/clientlibs/clean/imgs/menu-alt-white.svg')}
-.panClean .nav2021Component.dark .pan-2021-nav>.mobile-search{background-image:url('/etc/clientlibs/clean/imgs/search-white.svg')}
-.panClean .nav2021Component.dark .pan-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/pan-logo-light.svg')}
+.panClean .nav2021Component.dark .pan-2021-nav>.nav-open{background-image:url('etc/clientlibs/clean/imgs/menu-alt-white.svg')}
+.panClean .nav2021Component.dark .pan-2021-nav>.mobile-search{background-image:url('etc/clientlibs/clean/imgs/search-white.svg')}
+.panClean .nav2021Component.dark .pan-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/pan-logo-light.svg')}
 .panClean .nav2021Component.dark .pan-2021-nav>.nav-open:active,.panClean .nav2021Component.dark .pan-2021-nav>.mobile-search:active{background-color:rgba(0,0,0,0.15)}
 }
 .panClean .nav2021Component .pan-2021-nav-toolbar{background-color:#f4f4f2}
@@ -2427,7 +2427,7 @@ to{transform:translateX(0)}
 .panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>a.under-attack,.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>span.under-attack{color:#141414;background-color:#ececf0;border:1px solid #d8d8d8;line-height:32px;border-radius:32px}
 .panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>a.under-attack:hover,.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>span.under-attack:hover,.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>a.under-attack:active,.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>span.under-attack:active{color:#141414;background-color:#dfdfdf;border-color:#dfdfdf}
 .panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li .dropdown>.dropdown-toggle{color:#141414;font-size:12px;line-height:20px;text-decoration:none;padding:0 12px;margin:0 3px;display:flex;align-items:center}
-.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li .dropdown>.dropdown-toggle::after{display:inline-block;border:0;width:18px;height:18px;background-size:18px 18px;background-repeat:no-repeat;background-position:center;background-image:url('/etc/clientlibs/clean/imgs/chevron-down-black.svg')}
+.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li .dropdown>.dropdown-toggle::after{display:inline-block;border:0;width:18px;height:18px;background-size:18px 18px;background-repeat:no-repeat;background-position:center;background-image:url('etc/clientlibs/clean/imgs/chevron-down-black.svg')}
 }
 @media(min-width:1400px){.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>a,.panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li>span{font-size:13px}
 .panClean .nav2021Component .pan-2021-nav-toolbar .toolbar-nav>li .dropdown>.dropdown-toggle{font-size:13px}
@@ -2471,14 +2471,14 @@ to{transform:translateX(0)}
 @media(min-width:1920px){.panClean .nav2021Component .pan-2021-nav-main .nav-left>li.logo{padding-right:40px}
 }
 @media(min-width:1200px){.panClean .nav2021Component.dark .pan-2021-nav:not(.open) .pan-2021-nav-main{background:0}
-.panClean .nav2021Component.dark .pan-2021-nav:not(.open) .pan-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/pan-logo-light.svg')}
+.panClean .nav2021Component.dark .pan-2021-nav:not(.open) .pan-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/pan-logo-light.svg')}
 .panClean .nav2021Component.dark .pan-2021-nav:not(.open) .pan-2021-nav-main .nav-left>li>a{color:#fff}
-.panClean .nav2021Component.dark .pan-2021-nav:not(.open) .pan-2021-nav-main .nav-right>li.search>a{background-image:url('/etc/clientlibs/clean/imgs/search-white.svg')}
+.panClean .nav2021Component.dark .pan-2021-nav:not(.open) .pan-2021-nav-main .nav-right>li.search>a{background-image:url('etc/clientlibs/clean/imgs/search-white.svg')}
 .panClean .nav2021Component.light:not(.absolute) .pan-2021-nav .pan-2021-nav-main,.panClean .nav2021Component.light .pan-2021-nav.open .pan-2021-nav-main,.panClean .nav2021Component.dark .pan-2021-nav.open .pan-2021-nav-main{background-color:#fff}
-.panClean .nav2021Component.light .pan-2021-nav-main .logo>a,.panClean .nav2021Component.dark .pan-2021-nav.open .pan-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/pan-logo-dark.svg')}
+.panClean .nav2021Component.light .pan-2021-nav-main .logo>a,.panClean .nav2021Component.dark .pan-2021-nav.open .pan-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/pan-logo-dark.svg')}
 .panClean .nav2021Component.light .pan-2021-nav-main .nav-left>li>a,.panClean .nav2021Component.dark .pan-2021-nav.open .pan-2021-nav-main .nav-left>li>a{color:#141414}
-.panClean .nav2021Component.light .pan-2021-nav-main .nav-right>li.search>a,.panClean .nav2021Component.dark .pan-2021-nav.open .pan-2021-nav-main .nav-right>li.search>a{background-image:url('/etc/clientlibs/clean/imgs/search-black.svg')}
-.panClean .nav2021Component.light.alt-light .pan-2021-nav:not(.open) .pan-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/pan-logo-alt-dark.svg')}
+.panClean .nav2021Component.light .pan-2021-nav-main .nav-right>li.search>a,.panClean .nav2021Component.dark .pan-2021-nav.open .pan-2021-nav-main .nav-right>li.search>a{background-image:url('etc/clientlibs/clean/imgs/search-black.svg')}
+.panClean .nav2021Component.light.alt-light .pan-2021-nav:not(.open) .pan-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/pan-logo-alt-dark.svg')}
 .panClean .nav2021Component.light.alt-light .pan-2021-nav:not(.open) .pan-2021-nav-main .nav-right>li.cta .btn.btn-primary{background-color:#fff;border-color:#fff;color:#141414}
 .panClean .nav2021Component.light.alt-light .pan-2021-nav:not(.open) .pan-2021-nav-main .nav-right>li.cta .btn.btn-primary:hover{background-color:#f4f4f2;border-color:#f4f4f2;color:#141414}
 }
@@ -2532,13 +2532,13 @@ to{transform:translateX(0)}
 @media(max-width:1199.98px){.panClean .productNav2021Component:not(.absolute) .product-2021-nav{position:relative}
 }
 @media(max-width:1199.98px){.panClean .productNav2021Component.light .product-2021-nav{background:0}
-.panClean .productNav2021Component.light .product-2021-nav>.nav-open{background-image:url('/etc/clientlibs/clean/imgs/menu-alt-black.svg')}
-.panClean .productNav2021Component.light .product-2021-nav>.mobile-search{background-image:url('/etc/clientlibs/clean/imgs/search-black.svg')}
+.panClean .productNav2021Component.light .product-2021-nav>.nav-open{background-image:url('etc/clientlibs/clean/imgs/menu-alt-black.svg')}
+.panClean .productNav2021Component.light .product-2021-nav>.mobile-search{background-image:url('etc/clientlibs/clean/imgs/search-black.svg')}
 .panClean .productNav2021Component.light .product-2021-nav>.nav-open:hover,.panClean .productNav2021Component.light .product-2021-nav>.mobile-search:hover,.panClean .productNav2021Component.light .product-2021-nav>.nav-open:active,.panClean .productNav2021Component.light .product-2021-nav>.mobile-search:active{background-color:rgba(0,0,0,0.1)}
 .panClean .productNav2021Component.light:not(.absolute) .product-2021-nav{background-color:#f4f4f2}
 .panClean .productNav2021Component.dark .product-2021-nav{background:0}
-.panClean .productNav2021Component.dark .product-2021-nav>.nav-open{background-image:url('/etc/clientlibs/clean/imgs/menu-alt-white.svg')}
-.panClean .productNav2021Component.dark .product-2021-nav>.mobile-search{background-image:url('/etc/clientlibs/clean/imgs/search-white.svg')}
+.panClean .productNav2021Component.dark .product-2021-nav>.nav-open{background-image:url('etc/clientlibs/clean/imgs/menu-alt-white.svg')}
+.panClean .productNav2021Component.dark .product-2021-nav>.mobile-search{background-image:url('etc/clientlibs/clean/imgs/search-white.svg')}
 .panClean .productNav2021Component.dark .product-2021-nav>.nav-open:hover,.panClean .productNav2021Component.dark .product-2021-nav>.mobile-search:hover,.panClean .productNav2021Component.dark .product-2021-nav>.nav-open:active,.panClean .productNav2021Component.dark .product-2021-nav>.mobile-search:active{background-color:rgba(255,255,255,0.1)}
 }
 .panClean .productNav2021Component .product-2021-nav-main .pan-home{display:flex;flex-direction:column;justify-content:center;align-items:center;width:50px;height:56px;background-color:#fa582d}
@@ -2582,7 +2582,7 @@ to{transform:translateX(0)}
 .panClean .productNav2021Component .product-2021-nav-main .nav-left>li.logo>a{display:inline-block;padding:0;background-repeat:no-repeat;background-size:contain}
 .panClean .productNav2021Component .product-2021-nav-main .nav-left>li.logo>a::after{content:none}
 .panClean .productNav2021Component .product-2021-nav-main .nav-right>li.search{padding-right:15px}
-.panClean .productNav2021Component .product-2021-nav-main .nav-right>li.search>a{width:24px;height:24px;background-size:24px 24px;display:inline-block;background-image:url('/etc/clientlibs/clean/imgs/search-black.svg')}
+.panClean .productNav2021Component .product-2021-nav-main .nav-right>li.search>a{width:24px;height:24px;background-size:24px 24px;display:inline-block;background-image:url('etc/clientlibs/clean/imgs/search-black.svg')}
 .panClean .productNav2021Component .product-2021-nav-main .nav-right>li.cta{padding-left:15px}
 .panClean .productNav2021Component .product-2021-nav-main .nav-right>li.cta .btn{font-size:12px;padding:8px 15px}
 }
@@ -2605,12 +2605,12 @@ to{transform:translateX(0)}
 }
 @media(min-width:1200px){.panClean .productNav2021Component.dark .product-2021-nav:not(.open) .product-2021-nav-main .nav-left>li .dropdown>.dropdown-toggle,.panClean .productNav2021Component.dark .product-2021-nav:not(.open) .product-2021-nav-main .nav-right>li .dropdown>.dropdown-toggle{color:#fff}
 .panClean .productNav2021Component.dark .product-2021-nav:not(.open) .product-2021-nav-main .nav-left>li>a:not(.btn-primary),.panClean .productNav2021Component.dark .product-2021-nav:not(.open) .product-2021-nav-main .nav-right>li>a:not(.btn-primary){color:#fff}
-.panClean .productNav2021Component.dark .product-2021-nav:not(.open) .product-2021-nav-main .nav-right>li.search>a{background-image:url('/etc/clientlibs/clean/imgs/search-white.svg')}
+.panClean .productNav2021Component.dark .product-2021-nav:not(.open) .product-2021-nav-main .nav-right>li.search>a{background-image:url('etc/clientlibs/clean/imgs/search-white.svg')}
 .panClean .productNav2021Component.light.alt-light .product-2021-nav:not(.open) .nav-right>li.cta .btn.btn-primary{background-color:#fff;border-color:#fff;color:#141414}
 .panClean .productNav2021Component.light.alt-light .product-2021-nav:not(.open) .nav-right>li.cta .btn.btn-primary:hover{background-color:#f4f4f2;border-color:#f4f4f2;color:#141414}
 .panClean .productNav2021Component.light:not(.absolute) .product-2021-nav-main,.panClean .productNav2021Component.light .product-2021-nav.open .product-2021-nav-main,.panClean .productNav2021Component.dark .product-2021-nav.open .product-2021-nav-main{background-color:#fff}
 .panClean .productNav2021Component.light .product-2021-nav-main .nav-left>li>a,.panClean .productNav2021Component.dark .product-2021-nav.open .product-2021-nav-main .nav-left>li>a{color:#141414}
-.panClean .productNav2021Component.light .product-2021-nav-main .nav-right>li.search>a,.panClean .productNav2021Component.dark .product-2021-nav.open .product-2021-nav-main .nav-right>li.search>a{background-image:url('/etc/clientlibs/clean/imgs/search-black.svg')}
+.panClean .productNav2021Component.light .product-2021-nav-main .nav-right>li.search>a,.panClean .productNav2021Component.dark .product-2021-nav.open .product-2021-nav-main .nav-right>li.search>a{background-image:url('etc/clientlibs/clean/imgs/search-black.svg')}
 }
 @media(max-width:1199.98px){.panClean .pan-page-alert.open ~ .productNav2021Component .product-2021-nav.open .pan-nav-search{top:-59px !important}
 .panClean .pan-page-alert.open ~ .productNav2021Component .pan-nav-search{top:0 !important}
@@ -2626,9 +2626,9 @@ to{transform:translateX(0)}
 }
 @media(max-width:767.98px){.panClean .productNav2021Component[data-type="prisma"] .product-2021-nav>.mobile-header-logo{width:175px;height:23px;background-size:175px 23px}
 }
-@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="prisma"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/prisma-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="prisma"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/prisma-logo-alt-dark.svg')}
-.panClean .productNav2021Component.dark[data-type="prisma"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/prisma-logo-light.svg')}
+@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="prisma"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/prisma-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="prisma"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/prisma-logo-alt-dark.svg')}
+.panClean .productNav2021Component.dark[data-type="prisma"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/prisma-logo-light.svg')}
 }
 .panClean .productNav2021Component[data-type="prisma"] .product-2021-nav-main .btn.btn-primary,.panClean .productNav2021Component[data-type="sase"] .product-2021-nav-main .btn.btn-primary{background-color:#00c0e8}
 .panClean .productNav2021Component[data-type="prisma"] .product-2021-nav-main .btn.btn-primary:hover,.panClean .productNav2021Component[data-type="sase"] .product-2021-nav-main .btn.btn-primary:hover{background-color:#0fd6ff}
@@ -2638,17 +2638,17 @@ to{transform:translateX(0)}
 }
 @media(min-width:1200px){.panClean .productNav2021Component[data-type="prisma"] .product-2021-nav-main .nav-left>li.logo>a{width:193px;height:25px}
 }
-@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="prisma"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/prisma-logo-light.svg')}
-.panClean .productNav2021Component.light[data-type="prisma"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="prisma"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/prisma-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="prisma"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/prisma-logo-alt-dark.svg')}
+@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="prisma"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/prisma-logo-light.svg')}
+.panClean .productNav2021Component.light[data-type="prisma"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="prisma"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/prisma-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="prisma"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/prisma-logo-alt-dark.svg')}
 }
 @media(max-width:1199.98px){.panClean .productNav2021Component[data-type="sase"] .product-2021-nav>.mobile-header-logo{width:124px;height:25px;background-size:124px 25px}
 }
 @media(max-width:767.98px){.panClean .productNav2021Component[data-type="sase"] .product-2021-nav>.mobile-header-logo{width:114px;height:23px;background-size:114px 23px}
 }
-@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="sase"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/sase-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="sase"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/sase-logo-alt-dark.svg')}
-.panClean .productNav2021Component.dark[data-type="sase"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/sase-logo-light.svg')}
+@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="sase"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/sase-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="sase"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/sase-logo-alt-dark.svg')}
+.panClean .productNav2021Component.dark[data-type="sase"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/sase-logo-light.svg')}
 }
 .panClean .productNav2021Component[data-type="prisma"] .product-2021-nav-main .btn.btn-primary,.panClean .productNav2021Component[data-type="sase"] .product-2021-nav-main .btn.btn-primary{background-color:#00c0e8}
 .panClean .productNav2021Component[data-type="prisma"] .product-2021-nav-main .btn.btn-primary:hover,.panClean .productNav2021Component[data-type="sase"] .product-2021-nav-main .btn.btn-primary:hover{background-color:#0fd6ff}
@@ -2658,20 +2658,20 @@ to{transform:translateX(0)}
 }
 @media(min-width:1200px){.panClean .productNav2021Component[data-type="sase"] .product-2021-nav-main .nav-left>li.logo>a{width:124px;height:25px}
 }
-@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="sase"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/sase-logo-light.svg')}
-.panClean .productNav2021Component.light[data-type="sase"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="sase"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/sase-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="sase"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/sase-logo-alt-dark.svg')}
+@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="sase"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/sase-logo-light.svg')}
+.panClean .productNav2021Component.light[data-type="sase"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="sase"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/sase-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="sase"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/sase-logo-alt-dark.svg')}
 }
 @media(max-width:1199.98px){.panClean .productNav2021Component[data-type="cortex"] .product-2021-nav>.mobile-header-logo{width:144px;height:25px;background-size:144px 25px}
 }
 @media(max-width:767.98px){.panClean .productNav2021Component[data-type="cortex"] .product-2021-nav>.mobile-header-logo{width:132px;height:23px;background-size:132px 23px}
 }
-@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
-.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-negative.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-light.svg')}
+@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
+.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-negative.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-light.svg')}
 }
 .panClean .productNav2021Component[data-type="cortex"] .product-2021-nav-main .btn.btn-primary{background-color:#0c6}
 .panClean .productNav2021Component[data-type="cortex"] .product-2021-nav-main .btn.btn-primary:hover{background-color:#00f279}
@@ -2680,21 +2680,21 @@ to{transform:translateX(0)}
 @media(min-width:1200px){.panClean .productNav2021Component[data-type="cortex"] .product-2021-nav-main .nav-left>li.logo{padding-right:20px}
 .panClean .productNav2021Component[data-type="cortex"] .product-2021-nav-main .nav-left>li.logo>a{width:144px;height:25px}
 }
-@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-negative.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-light.svg')}
-.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav-main.pt-br-nav-logo .logo>a,.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav.open .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
+@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-negative.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-light.svg')}
+.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav-main.pt-br-nav-logo .logo>a,.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav.open .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light[data-type="cortex"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="cortex"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex/cortex-logo-by-line-positive.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light.alt-light[data-type="cortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
 }
 @media(max-width:1199.98px){.panClean .productNav2021Component[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{width:175px;height:23px;background-size:175px 23px}
 }
-@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
-.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg')}
+@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
+.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav.pt-br-nav-logo>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg')}
 .panClean .productNav2021Component[data-type="cloudcortex"] .product-2021-nav-main .nav-left .mega-dropdown-menu[data-type="platform"] .col.col-list .list-unstyled>li>a{color:#141414}
 }
 .panClean .productNav2021Component[data-type="cloudcortex"] .product-2021-nav-main .btn.btn-primary{background-color:#0c6}
@@ -2704,20 +2704,20 @@ to{transform:translateX(0)}
 @media(min-width:1200px){.panClean .productNav2021Component[data-type="cloudcortex"] .product-2021-nav-main .nav-left>li.logo{padding-right:20px}
 .panClean .productNav2021Component[data-type="cloudcortex"] .product-2021-nav-main .nav-left>li.logo>a{width:193px;height:27px}
 }
-@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg')}
-.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav-main.pt-br-nav-logo .logo>a,.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav.open .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg');width:200px;height:60px;background-size:200px 70px}
-.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
+@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-light.svg')}
+.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav-main.pt-br-nav-logo .logo>a,.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav.open .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light[data-type="cloudcortex"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="cloudcortex"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortexcloud-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main.pt-br-nav-logo .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg');width:200px;height:60px;background-size:200px 70px}
+.panClean .productNav2021Component.light.alt-light[data-type="cloudcortex"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/cortex-logo-alt-dark.svg')}
 }
 @media(max-width:1199.98px){.panClean .productNav2021Component[data-type="unit"] .product-2021-nav>.mobile-header-logo{width:131px;height:25px;background-size:131px 25px}
 }
 @media(max-width:767.98px){.panClean .productNav2021Component[data-type="unit"] .product-2021-nav>.mobile-header-logo{width:120px;height:23px;background-size:120px 23px}
 }
-@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="unit"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/unit42-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="unit"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/unit42-logo-alt-dark.svg')}
-.panClean .productNav2021Component.dark[data-type="unit"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/unit42-logo-light.svg')}
+@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="unit"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/unit42-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="unit"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/unit42-logo-alt-dark.svg')}
+.panClean .productNav2021Component.dark[data-type="unit"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/unit42-logo-light.svg')}
 }
 .panClean .productNav2021Component[data-type="unit"] .product-2021-nav-main .btn.btn-primary{color:#141414;background-color:#d9551d;background-image:linear-gradient(to right,#d9551d 25%,#d64420 75%)}
 .panClean .productNav2021Component[data-type="unit"] .product-2021-nav-main .btn.btn-primary:hover{background-image:linear-gradient(to right,#e25c24 25%,#df4b27 75%)}
@@ -2728,9 +2728,9 @@ to{transform:translateX(0)}
 .panClean .productNav2021Component[data-type="unit"] .product-2021-nav-main .nav-left>li.logo{padding-right:20px}
 .panClean .productNav2021Component[data-type="unit"] .product-2021-nav-main .nav-left>li.logo>a{width:131px;height:25px}
 }
-@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="unit"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/unit42-logo-light.svg')}
-.panClean .productNav2021Component.light[data-type="unit"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="unit"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/unit42-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="unit"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/unit42-logo-alt-dark.svg')}
+@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="unit"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/unit42-logo-light.svg')}
+.panClean .productNav2021Component.light[data-type="unit"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="unit"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/unit42-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="unit"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/unit42-logo-alt-dark.svg')}
 }
 @media(max-width:1199.98px){.panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{width:260px;height:24px;background-size:260px 24px}
 .panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav .mobile-header .nav-logo img{width:260px;height:24px}
@@ -2741,9 +2741,9 @@ to{transform:translateX(0)}
 @media(max-width:374.98px){.panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{width:181px;height:17px;background-size:181px 17px}
 .panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav .mobile-header .nav-logo img{width:181px;height:17px}
 }
-@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/ngfw-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/ngfw-logo-alt-dark.svg')}
-.panClean .productNav2021Component.dark[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{background-image:url('/etc/clientlibs/clean/imgs/ngfw-logo-light.svg')}
+@media(max-width:1199.98px){.panClean .productNav2021Component.light[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/ngfw-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/ngfw-logo-alt-dark.svg')}
+.panClean .productNav2021Component.dark[data-type="ngfw"] .product-2021-nav>.mobile-header-logo{background-image:url('etc/clientlibs/clean/imgs/ngfw-logo-light.svg')}
 }
 .panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav-main .btn.btn-primary{background-color:#ffcb06}
 .panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav-main .btn.btn-primary:hover{background-color:#ffd32c}
@@ -2752,9 +2752,9 @@ to{transform:translateX(0)}
 @media(min-width:1200px){.panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav-main .nav-left>li.logo{padding-right:20px}
 .panClean .productNav2021Component[data-type="ngfw"] .product-2021-nav-main .nav-left>li.logo>a{width:260px;height:24px}
 }
-@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="ngfw"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/ngfw-logo-light.svg')}
-.panClean .productNav2021Component.light[data-type="ngfw"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="ngfw"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/ngfw-logo-dark.svg')}
-.panClean .productNav2021Component.light.alt-light[data-type="ngfw"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('/etc/clientlibs/clean/imgs/ngfw-logo-alt-dark.svg')}
+@media(min-width:1200px){.panClean .productNav2021Component.dark[data-type="ngfw"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/ngfw-logo-light.svg')}
+.panClean .productNav2021Component.light[data-type="ngfw"] .product-2021-nav-main .logo>a,.panClean .productNav2021Component.dark[data-type="ngfw"] .product-2021-nav.open .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/ngfw-logo-dark.svg')}
+.panClean .productNav2021Component.light.alt-light[data-type="ngfw"] .product-2021-nav:not(.open) .product-2021-nav-main .logo>a{background-image:url('etc/clientlibs/clean/imgs/ngfw-logo-alt-dark.svg')}
 }</style><script>/*
  JavaScript Cookie v2.2.1
  https://github.com/js-cookie/js-cookie
@@ -2920,7 +2920,7 @@ window.PAN_renderCleanNavAccountMenu(window.PAN_initialize2021Nav);window.PAN_in
 						document.getElementsByTagName('body')[0].appendChild(tag);
 					});
 				}
-				var scriptLoaded = loadAsyncScript('/apps/pan/public/singlePageReactModel?pageId=/content/pan/en_US/prisma/container-network-security-with-prisma-airs');
+				var scriptLoaded = loadAsyncScript('apps/pan/public/singlePageReactModel?pageId=/content/pan/en_US/prisma/container-network-security-with-prisma-airs');
 				scriptLoaded.then(function() {
 					var i=0;
 					try {
@@ -2933,8 +2933,8 @@ window.PAN_renderCleanNavAccountMenu(window.PAN_initialize2021Nav);window.PAN_in
 				});
 			});
 				
-    PAN.setCurrentPageId('/content/pan/en_US/prisma/container-network-security-with-prisma-airs');
-    PAN.tracking.addId('/content/pan/en_US/prisma/container-network-security-with-prisma-airs');
+    PAN.setCurrentPageId('content/pan/en_US/prisma/container-network-security-with-prisma-airs');
+    PAN.tracking.addId('content/pan/en_US/prisma/container-network-security-with-prisma-airs');
 	PAN.shouldRedirectDuringLogin = false;
 
 	PAN.setPath("content/pan/en_US/prisma/container-network-security-with-prisma-airs");
@@ -2990,13 +2990,13 @@ try{webData.createdOn = "09/23/2025";}catch(error){}
 </script><script src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/launch-425c423d843b.min.js" async=""></script><meta name="twitter:site" content="@PaloAltoNtwks"><meta name="twitter:creator" content="@PaloAltoNtwks"><meta property="og:site_name" content="Palo Alto Networks"><meta property="og:locale" content="en_US"><meta property="og:title" content="Container Network Security with Prisma AIRS"><meta property="og:type" content="website"><meta property="og:description" content="Prisma AIRS protects your container applications with runtime network security.  Get protection from damaging perimeter intrusions and unauthorized lateral movement. "><meta property="og:url" content="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs"><meta name="twitter:title" content="Container Network Security with Prisma AIRS"><meta property="twitter:description" name="twitter:description" content="Prisma AIRS protects your container applications with runtime network security.  Get protection from damaging perimeter intrusions and unauthorized lateral movement. "><meta name="twitter:card" content="summary"><meta name="image" property="og:image" content="https://www.paloaltonetworks.com/etc/clientlibs/pan-templates/seoimages/social-panw.png"><meta name="twitter:image" property="twitter:image" content="https://www.paloaltonetworks.com/etc/clientlibs/pan-templates/seoimages/social-panw.png"><link rel="icon" type="image/vnd.microsoft.icon" href="https://www.paloaltonetworks.com/etc/designs/pan/favicon.ico"><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.paloaltonetworks.com/etc/designs/pan/favicon.ico"><style type="text/css">
             @media (max-width: 767.98px) {
                 .hero-single{
-                    background-image: url('/content/dam/pan/en_US/images/prisma/container-network-security-with-prisma-airs/hero-mobile.jpg') !important;
+                    background-image: url('content/dam/pan/en_US/images/prisma/container-network-security-with-prisma-airs/hero-mobile.jpg') !important;
                 }
             }
         
   .hp-2024-slide-animations {
     background-color: #141414;
-    background-image: url(/content/dam/pan/en_US/images/prisma/container-network-security-with-prisma-airs/video-background.jpg);
+    background-image: url(content/dam/pan/en_US/images/prisma/container-network-security-with-prisma-airs/video-background.jpg);
     min-height: 48rem;
     position: relative;
     overflow: hidden;
@@ -3211,7 +3211,7 @@ try{webData.createdOn = "09/23/2025";}catch(error){}
     border-radius: 2.75rem;
     padding: 0;
     border: 0;
-    background-image: url("/etc/clientlibs/clean/imgs/video-play-white.svg");
+    background-image: url("etc/clientlibs/clean/imgs/video-play-white.svg");
     background-size: 1rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -3221,7 +3221,7 @@ try{webData.createdOn = "09/23/2025";}catch(error){}
     outline: 0;
   }
   .hp-2024-slide-animations .btn-play.pause {
-    background-image: url("/etc/clientlibs/clean/imgs/2024/icon-pause-white.svg");
+    background-image: url("etc/clientlibs/clean/imgs/2024/icon-pause-white.svg");
     background-size: 1rem;
   }
   .hp-2024-slide-animations .circle-svg {
@@ -4639,7 +4639,7 @@ color: #000000;
 					</a>
 					<style type="text/css">
 									[data-type='default'] .mega-dropdown-menu[data-type='partners'] .tile-type-image .tile-image:nth-child(1) > a .content{
-										background-image: url('/content/dam/pan/en_US/northstar/nav2021/CYBERFORCE-Resources-BG.png');
+										background-image: url('content/dam/pan/en_US/northstar/nav2021/CYBERFORCE-Resources-BG.png');
 									}
 								</style>
 							</div>
@@ -4753,7 +4753,7 @@ color: #000000;
 					</a>
 					<style type="text/css">
 									[data-type='default'] .mega-dropdown-menu[data-type='company'] .tile-type-image .tile-image:nth-child(1) > a .content{
-										background-image: url('/content/dam/pan/en_US/images/awards/inclusion-diversity.png');
+										background-image: url('content/dam/pan/en_US/images/awards/inclusion-diversity.png');
 									}
 								</style>
 							</div>
@@ -4868,7 +4868,7 @@ color: #000000;
 					</a>
 					<style type="text/css">
 									[data-type='default'] .mega-dropdown-menu[data-type='more'] .tile-type-image .tile-image:nth-child(1) > a .content{
-										background-image: url('/content/dam/pan/en_US/northstar/nav2021/panw-global-navigation-partners.jpg');
+										background-image: url('content/dam/pan/en_US/northstar/nav2021/panw-global-navigation-partners.jpg');
 									}
 								</style>
 							</div>
@@ -5040,41 +5040,18 @@ var techDocsPagePath = "https://docs.paloaltonetworks.com/search";
                         
                     </video><div class=" bg-overlay    "></div><div class="container-fluid "><h1 class="h1 title  text-dark">Protect Container Networks <br class="d-none d-md-inline">Inside and Out</h1><h2 class="h7 sub-title text-dark">Go beyond access control. Prevent threats and stop attacks hidden in <br>legitimate traffic for safe inter-application connectivity.</h2><div class="actions pt-2 linkHelper pt-xl-4 d-flex flex-column flex-md-row flex-md-wrap "><!-- custom spacing --><!-- playIconButtonStyle --><ul class="list-unstyled"><li><a href="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs#demo" class="btn pageAnchor  btn-primary dark" data-type="prisma" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:hero-banner:go beyond access control prevent threats and stop attacks hidden in legitimate traffic for safe inter-application connectivity:cta:request a demo">
                         Request a demo<i></i></a></li></ul></div></div></div></section>
-<script async="" src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/deferedRegularTabs.min.js"></script></div><div class="slimArticleCarousel baseComponent parbase section"><!-- custom spacing -->
-<section class="slim-article-carousel  base-comp-spacer spacer-none tablet-spacer-unset mobile-spacer-unset bottom-spacer-none bottom-tablet-spacer-unset bottom-mobile-spacer-unset" id="id_ff16cfbe-70e1-40eb-b09c-711749168334" data-type="prisma"><div class="glider-contain"><div class="container-fluid"><div class="row"><div class="col-12 col-lg-6"><h2 class="eyebrow text-500 main-title text-white mb-3" data-truncate-lines="2">
-                        RECOMMENDED
-                    </h2></div></div></div>
-                    <nav class="glider-wrapper d-flex flex-nowrap glider draggable"><div class="glider-track" style="width: 3149.42px;"><div class="glider-slide px-2 active left-2 visible" data-gslide="0" style="height: auto; width: 557.419px;"><a href="https://technologypartners.paloaltonetworks.com/English/integration/Prisma-AIRS-Red%20Hat-OpenShift-Container-Security" target="_new" class="card-link d-flex align-items-center flex-grow-0 flex-shrink-0 text-dark" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:slimarticlecarousel:card-0:prisma airs &amp; red hat openshift container security:learn about integration" rel="noopener"><div class="image flex-grow-0 flex-shrink-0 mr-3 cover"><img src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/red-hat-openshift-180x180.png" alt="Red Hat OpenShift Container Security" nolozad="true"></div><div class="content d-flex flex-column justify-content-evenly"><h3 class="body-sans-3 text-500 desc mb-0 mb-lg-3 pb-0 text-dark" data-truncate-lines="2">
-                                Prisma AIRS &amp; Red Hat OpenShift Container Security
-                            </h3><span class="nav-list meta d-inline-flex align-items-end flex-grow-1">
-                                Learn about integration
-                            </span></div></a></div><div class="glider-slide px-2 left-1 visible" data-gslide="1" style="height: auto; width: 557.419px;"><a href="https://www.paloaltonetworks.com/resources/reference-architectures/securing-gen-ai-apps-aws" target="_new" class="card-link d-flex align-items-center flex-grow-0 flex-shrink-0 text-dark" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:slimarticlecarousel:card-1:securing genai applications in aws reference architecture:speed deployment" rel="noopener"><div class="image flex-grow-0 flex-shrink-0 mr-3 cover"><img src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/securing-genai-applications-in-aws-180x180.png" alt="GenAI Applications" nolozad="true"></div><div class="content d-flex flex-column justify-content-evenly"><h3 class="body-sans-3 text-500 desc mb-0 mb-lg-3 pb-0 text-dark" data-truncate-lines="2">
-                                Securing GenAI Applications in AWS Reference Architecture
-                            </h3><span class="nav-list meta d-inline-flex align-items-end flex-grow-1">
-                                Speed deployment
-                            </span></div></a></div><div class="glider-slide px-2 center visible" data-gslide="2" style="height: auto; width: 557.419px;"><a href="https://www.paloaltonetworks.com/resources/reference-architectures/securing-gen-ai-apps-azure" target="_self" class="card-link d-flex align-items-center flex-grow-0 flex-shrink-0 text-dark" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:slimarticlecarousel:card-2:securing genai applications in azure :see reference architecture" rel="noopener"><div class="image flex-grow-0 flex-shrink-0 mr-3 cover"><img src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/securing-genai-applications-in-azure-180x180.png" alt="Securing GenAI Applications in Azure " nolozad="true"></div><div class="content d-flex flex-column justify-content-evenly"><h3 class="body-sans-3 text-500 desc mb-0 mb-lg-3 pb-0 text-dark" data-truncate-lines="2">
-                                Securing GenAI Applications in Azure 
-                            </h3><span class="nav-list meta d-inline-flex align-items-end flex-grow-1">
-                                See reference architecture
-                            </span></div></a></div><div class="glider-slide px-2 center visible" data-gslide="3" style="height: auto; width: 557.419px;"><a href="https://www.paloaltonetworks.com/resources/reference-architectures/securing-gen-ai-apps-gcp" target="_self" class="card-link d-flex align-items-center flex-grow-0 flex-shrink-0 text-dark" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:slimarticlecarousel:card-3:securing genai applications in google cloud reference architecture:find out how" rel="noopener"><div class="image flex-grow-0 flex-shrink-0 mr-3 cover"><img src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/architecture-180x180.png" alt="Securing GenAI Applications in Google Cloud Reference Architecture" nolozad="true"></div><div class="content d-flex flex-column justify-content-evenly"><h3 class="body-sans-3 text-500 desc mb-0 mb-lg-3 pb-0 text-dark" data-truncate-lines="2">
-                                Securing GenAI Applications in Google Cloud Reference Architecture
-                            </h3><span class="nav-list meta d-inline-flex align-items-end flex-grow-1">
-                                Find out how
-                            </span></div></a></div><div class="glider-slide px-2 right-1" data-gslide="4" style="height: auto; width: 557.419px;"><a href="https://www.paloaltonetworks.com/resources/datasheets/ai-runtime-security" target="_self" class="card-link d-flex align-items-center flex-grow-0 flex-shrink-0 text-dark" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:slimarticlecarousel:card-4:prisma airs datasheet:get the details" rel="noopener"><div class="image flex-grow-0 flex-shrink-0 mr-3 cover"><img data-src="content/dam/pan/en_US/images/prisma/container-network-security-with-prisma-airs/datasheet-180x180.png" alt="Prisma AIRS datasheet" nolozad="false" class="lozad " src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/datasheet-180x180.png" data-loaded="true"></div><div class="content d-flex flex-column justify-content-evenly"><h3 class="body-sans-3 text-500 desc mb-0 mb-lg-3 pb-0 text-dark" data-truncate-lines="2">
-                                Prisma AIRS datasheet
-                            </h3><span class="nav-list meta d-inline-flex align-items-end flex-grow-1">
-                                Get the details
-                            </span></div></a></div></div></nav><div class="glider-nav  "><button class="glider-prev glider-button-white mt-0 disabled" aria-label="previous slide" data-page-track-value="container-network-security-with-prisma-airs:slimArticleCarousel:Previous" data-page-track="true" aria-disabled="true"></button><button class="glider-next glider-button-white mt-0" aria-label="next slide" data-page-track-value="container-network-security-with-prisma-airs:slimArticleCarousel:Next" data-page-track="true" aria-disabled="false"></button></div></div></section>
-</div><div class="anchorNavComp baseComponent parbase section"><!-- custom spacing -->
-<section class="anchor-nav position-absolute  background-transparentWithBlur theme-dark base-comp-spacer spacer-none tablet-spacer-unset mobile-spacer-unset bottom-spacer-none bottom-tablet-spacer-unset bottom-mobile-spacer-unset  uppercase" data-type="prisma" id="id_c22f2e94-95d9-4888-a926-698871267287"><div class="container-fluid"><div class="row justify-content-center"><div class="col-12 "><label class="m-0 p-1 align-items-center  d-flex d-xl-none" aria-label="Sub Navigation dropdown" for="mobile_anchor_nav_id_c22f2e94-95d9-4888-a926-698871267287"><select class="nav-select text-600 dark" id="mobile_anchor_nav_id_c22f2e94-95d9-4888-a926-698871267287"><option value="challenges" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:0:today’s challenges">Today’s Challenges</option><option value="solution" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:1:the solution">The Solution</option><option value="use-cases" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:2:use cases">Use cases</option><option value="capabilities" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:3:capabilities" selected="">CAPABILITIES</option><option value="demo" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:4:request demo">REQUEST DEMO</option></select></label><div class="nav flex-nowrap  d-none d-xl-flex  eyebrow  medium-text  align-items-center  justify-content-between   "><div class="anchor nav-item text-center"><a href="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs#challenges" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:0:todays challenges" class="nav-link">
+<script async="" src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/deferedRegularTabs.min.js"></script></div>
+</div>
+<div class="anchorNavComp baseComponent parbase section"><!-- custom spacing -->
+<section class="anchor-nav position-absolute  background-transparentWithBlur theme-dark base-comp-spacer spacer-none tablet-spacer-unset mobile-spacer-unset bottom-spacer-none bottom-tablet-spacer-unset bottom-mobile-spacer-unset  uppercase" data-type="prisma" id="id_c22f2e94-95d9-4888-a926-698871267287"><div class="container-fluid"><div class="row justify-content-center"><div class="col-12 "><label class="m-0 p-1 align-items-center  d-flex d-xl-none" aria-label="Sub Navigation dropdown" for="mobile_anchor_nav_id_c22f2e94-95d9-4888-a926-698871267287"><select class="nav-select text-600 dark" id="mobile_anchor_nav_id_c22f2e94-95d9-4888-a926-698871267287"><option value="challenges" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:0:today’s challenges">Today’s Challenges</option><option value="solution" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:1:the solution">The Solution</option><option value="use-cases" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:2:use cases">Use cases</option><option value="capabilities" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:3:capabilities" selected="">CAPABILITIES</option><option value="demo" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:drop-down:4:request demo">REQUEST DEMO</option></select></label><div class="nav flex-nowrap  d-none d-xl-flex  eyebrow  medium-text  align-items-center  justify-content-between   "><div class="anchor nav-item text-center"><a href="#challenges" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:0:todays challenges" class="nav-link">
                             Today’s Challenges
-                        </a></div><div class="anchor nav-item text-center"><a href="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs#solution" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:1:the solution" class="nav-link">
+                        </a></div><div class="anchor nav-item text-center"><a href="#solution" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:1:the solution" class="nav-link">
                             The Solution
-                        </a></div><div class="anchor nav-item text-center"><a href="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs#use-cases" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:2:use cases" class="nav-link">
+                        </a></div><div class="anchor nav-item text-center"><a href="#use-cases" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:2:use cases" class="nav-link">
                             Use cases
-                        </a></div><div class="anchor nav-item text-center active"><a href="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs#capabilities" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:3:capabilities" class="nav-link">
+                        </a></div><div class="anchor nav-item text-center active"><a href="#capabilities" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:3:capabilities" class="nav-link">
                             CAPABILITIES
-                        </a></div><div class="anchor nav-item text-center  "><a href="https://www.paloaltonetworks.com/prisma/container-network-security-with-prisma-airs#demo" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:4:request demo" class="nav-link">
+                        </a></div><div class="anchor nav-item text-center  "><a href="#demo" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:anchor-nav:4:request demo" class="nav-link">
                             REQUEST DEMO
                         </a></div></div></div></div></div></section>
 </div><div class="htmlComp baseComponent parbase section"><div class="base-component-spacer spacer-small  "></div><a name="challenges" class="page-anchor"></a><!--/*
@@ -5327,7 +5304,7 @@ var techDocsPagePath = "https://docs.paloaltonetworks.com/search";
                             Documents
                         </a></li></ul><p class="copyright text-black nav-list mb-3 mb-md-0">Copyright © 2025 Palo Alto Networks. All Rights Reserved</p></div><div class="col-12 col-md-6 order-md-2 col-xxl-4 order-xxl-3"><ul class="list-unstyled social-icons d-flex justify-content-start justify-content-md-end align-items-center"><li><a href="https://www.youtube.com/user/paloaltonetworks" target="_blank" class="social-icon d-flex" aria-label="social link" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:mainfootercomp:socials-0:youtube" rel="noopener"><img data-src="etc/clientlibs/clean/imgs/social/youtube-black.svg" alt="Youtube" class="lozad "></a></li><li><a href="https://www.paloaltonetworks.com/podcasts/threat-vector" target="_blank" class="social-icon d-flex" aria-label="social link" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:mainfootercomp:socials-1:podcast" rel="noopener"><img data-src="content/dam/pan/en_US/images/icons/podcast.svg" alt="Podcast" class="lozad "></a></li><li><a href="https://www.facebook.com/PaloAltoNetworks/" target="_blank" class="social-icon d-flex" aria-label="social link" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:mainfootercomp:socials-2:facebook" rel="noopener"><img data-src="etc/clientlibs/clean/imgs/social/facebook-black.svg" alt="Facebook" class="lozad "></a></li><li><a href="https://www.linkedin.com/company/palo-alto-networks" target="_blank" class="social-icon d-flex" aria-label="social link" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:mainfootercomp:socials-3:linkedin" rel="noopener"><img data-src="etc/clientlibs/clean/imgs/social/linkedin-black.svg" alt="LinkedIn" class="lozad "></a></li><li><a href="https://twitter.com/PaloAltoNtwks" target="_blank" class="social-icon d-flex" aria-label="social link" data-page-track="true" data-page-track-value="container-network-security-with-prisma-airs:mainfootercomp:socials-4:twitter" rel="noopener"><img data-src="etc/clientlibs/clean/imgs/social/twitter-x-black.svg" alt="Twitter" class="lozad "></a></li><li><div class="dropdown" data-language-json="[{&#39;localTitle&#39;:&#39;USA (ENGLISH)&#39;, &#39;localLink&#39;:&#39;#&#39;}, {&#39;localTitle&#39;:&#39;AUSTRALIA (ENGLISH)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.com.au&#39;}, {&#39;localTitle&#39;:&#39;BRAZIL (PORTUGUÉS)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.com.br&#39;}, {&#39;localTitle&#39;:&#39;CANADA (ENGLISH)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.ca&#39;}, {&#39;localTitle&#39;:&#39;CHINA (简体中文)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.cn&#39;}, {&#39;localTitle&#39;:&#39;FRANCE (FRANÇAIS)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.fr&#39;}, {&#39;localTitle&#39;:&#39;GERMANY (DEUTSCH)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.de&#39;}, {&#39;localTitle&#39;:&#39;INDIA (ENGLISH)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.in&#39;}, {&#39;localTitle&#39;:&#39;ITALY (ITALIANO)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.it&#39;}, {&#39;localTitle&#39;:&#39;JAPAN (日本語)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.jp&#39;}, {&#39;localTitle&#39;:&#39;KOREA (한국어)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.co.kr&#39;}, {&#39;localTitle&#39;:&#39;LATIN AMERICA (ESPAÑOL)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.lat&#39;}, {&#39;localTitle&#39;:&#39;MEXICO (ESPAÑOL)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.com.mx&#39;}, {&#39;localTitle&#39;:&#39;SINGAPORE (ENGLISH)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.sg&#39;}, {&#39;localTitle&#39;:&#39;SPAIN (ESPAÑOL)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.es&#39;}, {&#39;localTitle&#39;:&#39;TAIWAN (繁體中文)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.tw&#39;}, {&#39;localTitle&#39;:&#39;UK (ENGLISH)&#39;, &#39;localLink&#39;:&#39;https://www.paloaltonetworks.co.uk&#39;}]"><button class="btn btn-language d-inline-flex align-items-center lozad-background" type="button" id="language_dropdown_menu_button" data-toggle="dropdown" aria-expanded="false" data-offset="30" data-background-image="url(&#39;/etc/clientlibs/clean/imgs/globe-black.svg&#39;)"><span class="d-inline-flex">EN</span><i class="d-inline-flex"></i></button><div class="dropdown-menu dropdown-menu-right" aria-labelledby="language_dropdown_menu_button"><span class="h8 title d-flex pb-2">Select your language</span><ul class="list-unstyled nav-list p-0 d-block d-md-flex flex-wrap"></ul></div></div></li></ul></div></div></div></footer></div><div class="cleanBottomHtml htmlComp baseComponent parbase"><div class="base-component-spacer spacer-none  "></div></div><div class="cloudservices servicecomponents"><div id="at-prehide"></div></div></div><!-- OneTrust Cookies Consent Notice start for paloaltonetworks.com -->
 <script src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="8380accb-00d6-4b05-90ec-6d405f7310d6"></script><script type="text/javascript">
-            window.PAN_MainNavAsyncUrl = '/_jcr_content/globals/cleanHeader.fullRenderer.html';
+            window.PAN_MainNavAsyncUrl = '_jcr_content/globals/cleanHeader.fullRenderer.html';
       
 window.initialContainer = "General";
 
@@ -5587,16 +5564,16 @@ window.supportedContainer = ["Prisma","Sase","CloudCortex","Cortex","Cdss","Ngfw
 </script><!-- Should inline or normal include criticalBottom? --><script>(function(){window.PAN_Clean_Util.animateCSS=function(a,b,c){function d(){a.classList.remove("animate__animated","animate__"+b);a.removeEventListener("animationend",d);"function"===typeof c&&c()}a.classList.add("animate__animated","animate__"+b);a.addEventListener("animationend",d)};window.PAN_Clean_Util.$animateCSS=function(a,b,c){function d(){a.removeClass("animate__animated animate__"+b);a.off("animationend",d);"function"===typeof c&&c()}a.addClass("animate__animated animate__"+b);a.on("animationend",
 d)}})();var cbVarMap={},locationDetails={},default_logo,logo,container;
 try{$(window).on("load",function(){function a(d){$(document).on("keydown.autocomplete",'input[name\x3d"Company"]',function(){$(this).autoComplete({minChars:1,source:function(b,c){$.getJSON("https://autocomplete.clearbit.com/v1/companies/suggest",{query:b},function(e){c(e)})},renderItem:function(b,c){default_logo="https://www.paloaltonetworks.com/content/dam/pan/en_US/includes/unknown.gif";logo=null==b.logo?default_logo:b.logo+"?size\x3d25";container='\x3cdiv class\x3d"autocomplete-suggestion" data-name\x3d"'+
-b.name+'" data-val\x3d"'+c+'"\x3e';container+='\x3cspan class\x3d"icon"\x3e\x3cimg align\x3d"center" src\x3d"'+logo+'" onerror\x3d"this.src\x3d\'/content/dam/pan/en_US/includes/unknown.gif\';"/\x3e\x3c/span\x3e';return container+=b.name+'\x3cspan class\x3d"domain"\x3e'+b.domain+"\x3c/span\x3e\x3c/div\x3e"},onSelect:function(b,c,e){$('input[name\x3d"Company"]').val(e.data("name"));$(".autocomplete-suggestions").is(":visible")&&$(".autocomplete-suggestions:visible").css("display","none")}})})}$(document).on("focus",
+b.name+'" data-val\x3d"'+c+'"\x3e';container+='\x3cspan class\x3d"icon"\x3e\x3cimg align\x3d"center" src\x3d"'+logo+'" onerror\x3d"this.src\x3d\'content/dam/pan/en_US/includes/unknown.gif\';"/\x3e\x3c/span\x3e';return container+=b.name+'\x3cspan class\x3d"domain"\x3e'+b.domain+"\x3c/span\x3e\x3c/div\x3e"},onSelect:function(b,c,e){$('input[name\x3d"Company"]').val(e.data("name"));$(".autocomplete-suggestions").is(":visible")&&$(".autocomplete-suggestions:visible").css("display","none")}})})}$(document).on("focus",
 'input[name\x3d"Company"]',function(){var d=(new Date).getTime(),b=$(this).data("prevActionTime");$(this).data("prevActionTime",d);(!b||1E3<d-b)&&"undefined"===typeof jQuery.fn.autoComplete&&loadScript("content/dam/pan/en_US/includes/jquery.auto-complete.min.js").then(a)});if(-1==window.location.href.indexOf("unit42-preview.paloaltonetworks.com")||-1==window.location.href.indexOf("blog.paloaltonetworks.com")&&-1==window.location.href.indexOf("blog-test.paloaltonetworks.com")&&-1==window.location.href.indexOf("unit42.paloaltonetworks.com")&&
--1==window.location.href.indexOf("unit42-test.paloaltonetworks.com")&&-1==window.location.href.indexOf("unit42-test2.paloaltonetworks.com"))$("#field3[name~\x3d'Company']").on("focus",function(){$("link[href\x3d'/etc/clientlibs/pan-clearbit.min.css']").length||$("\x3clink/\x3e",{rel:"stylesheet",type:"text/css",href:"/etc/clientlibs/pan-clearbit.min.css",preload:!0}).appendTo("head")})})}catch(a){console.log(a)}
+-1==window.location.href.indexOf("unit42-test.paloaltonetworks.com")&&-1==window.location.href.indexOf("unit42-test2.paloaltonetworks.com"))$("#field3[name~\x3d'Company']").on("focus",function(){$("link[href\x3d'etc/clientlibs/pan-clearbit.min.css']").length||$("\x3clink/\x3e",{rel:"stylesheet",type:"text/css",href:"/etc/clientlibs/pan-clearbit.min.css",preload:!0}).appendTo("head")})})}catch(a){console.log(a)}
 function populateCompanyData(a){var d="",b="";if("undefined"!=typeof cbVarMap){for(var c in cbVarMap)"undefined"!=typeof cbVarMap[c]&&String.prototype.trim.call(null==cbVarMap[c]?"":cbVarMap[c])||(cbVarMap[c]=""),d=d+"\x26"+c+"\x3d"+cbVarMap[c],b=b+'\x3cinput type\x3d"hidden" name\x3d"'+c+'" value\x3d"'+cbVarMap[c]+'"\x3e';"undefined"!==typeof a&&0<$("form[name\x3d'"+a+"']").length&&$("form[name\x3d'"+a+"']").append(b)}return d}
 function retrieveMktVisitorCompanyDetails(){var a=decodeURI(getCookie("mktVisitorCompanyDetails"));""!=a&&"undefined"!=a&&deleteCookie("mktVisitorCompanyDetails");a=window.Dmdbase_CDC;console.log("companyDataiptocompany",a);"undefined"!=typeof a&&"undefined"!=typeof a.CompanyProfile&&a.CompanyProfile&&(a=a.CompanyProfile,0==a.isp&&(cbVarMap={Company_From_IP__c:a.company_name||"",Industry:a.industry||"",Sub_Industry__c:a.sub_industry||"",RL_Primary_Sic__c:a.primary_sic||"",RL_Primary_Naics__c:a.primary_naics||
 "",RL_Address__c:a.street_address||"",RL_City__c:a.city||"",RL_State__c:a.state||"",RL_ZIP_Postal_Code__c:a.zip||"",RL_Country_from_IP__c:a.country?a.country:a.country_name,RL_Phone__c:a.phone||"",Website:a.web_site||"",RL_Annual_Revenue_Range__c:a.revenue_range||"",RL_Employee_Range__c:a.employee_range||"",Latitude_based_on_IP__c:a.latitude||"",Longitude_based_on_IP__c:a.longitude||"",IP_Address__c:a.ip||"",RL_Company_LegalName__c:a.company_name||"",RL_Provider__c:"demandbase"}))}
 $(document).on("getDmdbaseCompanyData",{},function(a,d){"undefined"!=typeof d&&retrieveMktVisitorCompanyDetails()});function setVisitorCompanyDetailsCookie(a,d,b){b?(date=new Date,date.setTime(date.getTime()+6E4*b),expires="; expires\x3d"+date.toGMTString()):expires="; expires\x3d0";document.cookie=a+"\x3d"+d+expires+"; path\x3d/"}
 function getCookie(a){a+="\x3d";for(var d=decodeURIComponent(document.cookie).split(";"),b=0;b<d.length;b++){for(var c=d[b];" "==c.charAt(0);)c=c.substring(1);if(0==c.indexOf(a))return c.substring(a.length,c.length)}return""}function deleteCookie(a){document.cookie=a+"\x3d; Path\x3d/; Expires\x3dThu, 01 Jan 1970 00:00:01 GMT;";console.log("cookie is deleted "+a)};</script><script type="text/javascript" src="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/bundle.ddynamicAllComponents.poperjvaldlityybscoldgldrwayptbsdrodancnddcbgddctcddehtddepgddhecddlkhddptfddtsyddybadhsacdmftcdprfcddemn.min.aecbf37da96cad3ced0c8d3f6c083e44.js" defer=""></script><script type="text/javascript">
 		if (window.PAN_deferedCssList) {
-			PAN_deferedCssList.push('/etc/clientlibs/panClean/components/library/bundle.ddynamicAllComponents.poperjvaldlityybscoldgldrwayptbsdrodancnddcbgddctcddehtddepgddhecddlkhddptfddtsyddybadhsacdmftcdprfcddemn.min.aecbf37da96cad3ced0c8d3f6c083e44.css');
+			PAN_deferedCssList.push('etc/clientlibs/panClean/components/library/bundle.ddynamicAllComponents.poperjvaldlityybscoldgldrwayptbsdrodancnddcbgddctcddehtddepgddhecddlkhddptfddtsyddybadhsacdmftcdprfcddemn.min.aecbf37da96cad3ced0c8d3f6c083e44.css');
 			var noScriptNode = document.getElementsByTagName('body')[0];
 			var index;
 			for (index=0; index<PAN_deferedCssList.length; index++) {
@@ -5637,7 +5614,7 @@ function getCookie(a){a+="\x3d";for(var d=decodeURIComponent(document.cookie).sp
                 return serialized;
             }
         }
-	</script><link rel="stylesheet" href="./Container Network Security with Prisma AIRS - Palo Alto Networks_files/bundle.ddynamicAllComponents.poperjvaldlityybscoldgldrwayptbsdrodancnddcbgddctcddehtddepgddhecddlkhddptfddtsyddybadhsacdmftcdprfcddemn.min.aecbf37da96cad3ced0c8d3f6c083e44.css" type="text/css">
+	</script><link rel="stylesheet" href="Container Network Security with Prisma AIRS - Palo Alto Networks_files/bundle.ddynamicAllComponents.poperjvaldlityybscoldgldrwayptbsdrodancnddcbgddctcddehtddepgddhecddlkhddptfddtsyddybadhsacdmftcdprfcddemn.min.aecbf37da96cad3ced0c8d3f6c083e44.css" type="text/css">
 
 <script type="text/javascript">
 function OptanonWrapper() { }
