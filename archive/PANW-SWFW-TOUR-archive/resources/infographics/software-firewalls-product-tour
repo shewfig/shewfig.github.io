@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="content-page-ref" content="CtrlYytQqclhKJzDFIiBA5zSDF8rRXfQkxuUcN5OpkFRSf6zTocg-8Eo41A22RyhtFSlUFbc3qxewf5UDmU4HnT8rVnW9RC1U6s5_96OT7W3tPBhOzycNAOkqXs-k3au"/>
 <link rel="canonical" href="resources/infographics/software-firewalls-product-tour"/>
-<script>var globalConfig = {"visitorProfilingEnabled":false,"visitorProfileCookieExpirationPeriod":525600,"mktVisitorCompanyDetailsCookieExpirationPeriod":10080,"recommendationsDisplayedCookieExpirationPeriod":10080,"selectivePageVisitorProfilingEnabled":false,"repeatingRecommendationsEnabled":false,"resourcepageRecommendationsEnabled":false,"abmBannerEnabled":false,"abmRecommendationsEnabled":false,"abmRecommendationsLabelEnabled":false,"panUserProfilingEnabled":false,"homePageTeaserAnimationEnabled":false,"enableMktVisitorCompanyDetailsForGlobalForm":false,"enableMktVisitorCompanyDetailsForRecommendations":false,"enableMktVisitorCompanyDetailsForABMBanner":false,"imageWebWorkerEnabled":true,"embedClientLibsEnabled":false,"abmBannerUsingRecommendations":false,"abmBannerCookieExpirationPeriod":120,"ldapEmailListEnabledZoomWebinar":true,"jobLevelAndRoleConfigPath":"/etc/formsconfig/joblevelandrole.json","webFormsConfigPath":"/etc/formsconfig/webformsconfig.json","buildName":"MARKETO_THANKYOU_APPROACH_JUNE_26","tldsRegex":""};</script><link rel="apple-touch-icon" sizes="57x57" href="etc/clientlibs/pan/img/favicons2020/apple-touch-icon-57x57.png">
+<script>var globalConfig = {"visitorProfilingEnabled":false,"visitorProfileCookieExpirationPeriod":525600,"mktVisitorCompanyDetailsCookieExpirationPeriod":10080,"recommendationsDisplayedCookieExpirationPeriod":10080,"selectivePageVisitorProfilingEnabled":false,"repeatingRecommendationsEnabled":false,"resourcepageRecommendationsEnabled":false,"abmBannerEnabled":false,"abmRecommendationsEnabled":false,"abmRecommendationsLabelEnabled":false,"panUserProfilingEnabled":false,"homePageTeaserAnimationEnabled":false,"enableMktVisitorCompanyDetailsForGlobalForm":false,"enableMktVisitorCompanyDetailsForRecommendations":false,"enableMktVisitorCompanyDetailsForABMBanner":false,"imageWebWorkerEnabled":true,"embedClientLibsEnabled":false,"abmBannerUsingRecommendations":false,"abmBannerCookieExpirationPeriod":120,"ldapEmailListEnabledZoomWebinar":true,"jobLevelAndRoleConfigPath":"etc/formsconfig/joblevelandrole.json","webFormsConfigPath":"etc/formsconfig/webformsconfig.json","buildName":"MARKETO_THANKYOU_APPROACH_JUNE_26","tldsRegex":""};</script><link rel="apple-touch-icon" sizes="57x57" href="etc/clientlibs/pan/img/favicons2020/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="etc/clientlibs/pan/img/favicons2020/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="etc/clientlibs/pan/img/favicons2020/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="etc/clientlibs/pan/img/favicons2020/apple-touch-icon-76x76.png">
@@ -105,7 +105,7 @@ try{webData.createdOn = "09/17/2025";}catch(error){}
 				var script = document.createElement("script");
 				script.type = "text/javascript";
 				script.src =
-					"/etc/clientlibs/clean/dependencies/ie-pollyfill/ie-pollyfill.js";
+					"etc/clientlibs/clean/dependencies/ie-pollyfill/ie-pollyfill.js";
 				head.insertBefore(script, head.firstChild);
 			}
         //scriptsToBeLoadOnWindowLoad('https://static.cloud.coveo.com/searchui/v2.10112/0/js/CoveoJsSearch.Lazy.min.js');
@@ -707,7 +707,7 @@ $(document).ready(function () {
              var head = document.getElementsByTagName('head')[0];
              var video = document.createElement('script');
              video.type = 'text/javascript';
-             video.src = '/etc/clientlibs/pan/js/video.min.js';
+             video.src = 'etc/clientlibs/pan/js/video.min.js';
              head.appendChild(video);
         }
     </script>
@@ -716,7 +716,7 @@ $(document).ready(function () {
                                 /* load non critical css */
                                 var myNonCriticalCss = document.createElement('link');
                                 myNonCriticalCss.rel = 'stylesheet';
-                                myNonCriticalCss.href = '/etc/clientlibs/pan-englishOnly.min.css';
+                                myNonCriticalCss.href = 'etc/clientlibs/pan-englishOnly.min.css';
                                 myNonCriticalCss.type = 'text/css';
                                 var myNoScriptNode = document.getElementsByTagName('noscript')[0];
                                 myNoScriptNode.appendChild(myNonCriticalCss);
